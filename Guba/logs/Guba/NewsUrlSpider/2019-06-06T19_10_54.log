@@ -1,0 +1,121 @@
+2019-06-06 19:11:02 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: Guba)
+2019-06-06 19:11:02 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.3 (default, Mar 27 2019, 16:54:48) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-06-06 19:11:02 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'Guba', 'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 1, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'LOG_FILE': 'logs/Guba/NewsUrlSpider/2019-06-06T19_10_54.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'Guba.spiders', 'ROBOTSTXT_OBEY': True, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['Guba.spiders']}
+2019-06-06 19:11:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-06 19:11:02 [NewsUrlSpider] INFO: Reading start URLs from redis key 'Guba:start_urls' (batch size: 8, encoding: utf-8
+2019-06-06 19:11:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'Guba.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-06 19:11:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-06 19:11:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['Guba.pipelines.GubaPipeline']
+2019-06-06 19:11:02 [scrapy.core.engine] INFO: Spider opened
+2019-06-06 19:11:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:12:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:13:02 [scrapy.extensions.logstats] INFO: Crawled 9 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:14:02 [scrapy.extensions.logstats] INFO: Crawled 54 pages (at 45 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:15:02 [scrapy.extensions.logstats] INFO: Crawled 105 pages (at 51 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:16:02 [scrapy.extensions.logstats] INFO: Crawled 154 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:17:02 [scrapy.extensions.logstats] INFO: Crawled 204 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:18:02 [scrapy.extensions.logstats] INFO: Crawled 252 pages (at 48 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:19:02 [scrapy.extensions.logstats] INFO: Crawled 301 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:20:02 [scrapy.extensions.logstats] INFO: Crawled 349 pages (at 48 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:21:02 [scrapy.extensions.logstats] INFO: Crawled 395 pages (at 46 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:22:02 [scrapy.extensions.logstats] INFO: Crawled 445 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:22:42 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,600578,1,f_1.html> (referer: None)
+Traceback (most recent call last):
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py", line 50, in parse
+    redis_connect.lpush('News:start_urls', news_url)
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/client.py", line 1611, in lpush
+    return self.execute_command('LPUSH', name, *values)
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/Users/suool/anaconda3/lib/python3.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 60 connecting to 120.***.***.***:6379. Operation timed out.
+2019-06-06 19:23:02 [scrapy.extensions.logstats] INFO: Crawled 489 pages (at 44 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:24:02 [scrapy.extensions.logstats] INFO: Crawled 540 pages (at 51 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:25:02 [scrapy.extensions.logstats] INFO: Crawled 589 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:26:02 [scrapy.extensions.logstats] INFO: Crawled 638 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:27:02 [scrapy.extensions.logstats] INFO: Crawled 682 pages (at 44 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:28:02 [scrapy.extensions.logstats] INFO: Crawled 731 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:29:02 [scrapy.extensions.logstats] INFO: Crawled 781 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:30:02 [scrapy.extensions.logstats] INFO: Crawled 827 pages (at 46 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:31:02 [scrapy.extensions.logstats] INFO: Crawled 878 pages (at 51 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:32:02 [scrapy.extensions.logstats] INFO: Crawled 931 pages (at 53 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:33:02 [scrapy.extensions.logstats] INFO: Crawled 981 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:34:02 [scrapy.extensions.logstats] INFO: Crawled 1032 pages (at 51 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:35:02 [scrapy.extensions.logstats] INFO: Crawled 1081 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:36:02 [scrapy.extensions.logstats] INFO: Crawled 1130 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:37:02 [scrapy.extensions.logstats] INFO: Crawled 1178 pages (at 48 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:38:02 [scrapy.extensions.logstats] INFO: Crawled 1225 pages (at 47 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:39:02 [scrapy.extensions.logstats] INFO: Crawled 1272 pages (at 47 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:40:02 [scrapy.extensions.logstats] INFO: Crawled 1322 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:41:02 [scrapy.extensions.logstats] INFO: Crawled 1371 pages (at 49 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:42:02 [scrapy.extensions.logstats] INFO: Crawled 1421 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:43:02 [scrapy.extensions.logstats] INFO: Crawled 1471 pages (at 50 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:44:02 [scrapy.extensions.logstats] INFO: Crawled 1519 pages (at 48 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:45:02 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:46:02 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:47:02 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:48:02 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:49:02 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:50:02 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-06 19:50:46 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force 
+2019-06-06 19:50:46 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-06-06 19:50:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 474276,
+ 'downloader/request_count': 1523,
+ 'downloader/request_method_count/GET': 1523,
+ 'downloader/response_bytes': 26185177,
+ 'downloader/response_count': 1523,
+ 'downloader/response_status_count/200': 1522,
+ 'downloader/response_status_count/404': 1,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2019, 6, 6, 11, 50, 46, 545238),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 48,
+ 'memusage/max': 92938240,
+ 'memusage/startup': 63553536,
+ 'response_received_count': 1523,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued/redis': 1522,
+ 'scheduler/enqueued/redis': 1522,
+ 'spider_exceptions/ConnectionError': 1,
+ 'start_time': datetime.datetime(2019, 6, 6, 11, 11, 2, 457544)}
+2019-06-06 19:50:46 [scrapy.core.engine] INFO: Spider closed (shutdown)

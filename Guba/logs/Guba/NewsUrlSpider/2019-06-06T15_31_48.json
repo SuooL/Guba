@@ -1,0 +1,364 @@
+{
+    "log_path": "/Users/suool/PycharmProjects/Guba/logs/Guba/NewsUrlSpider/2019-06-06T15_31_48.log",
+    "json_path": "/Users/suool/PycharmProjects/Guba/logs/Guba/NewsUrlSpider/2019-06-06T15_31_48.json",
+    "json_url": "http://127.0.0.1:6800/logs/Guba/NewsUrlSpider/2019-06-06T15_31_48.json",
+    "size": 15535,
+    "position": 15535,
+    "status": "ok",
+    "_head": 100,
+    "pages": 1523,
+    "items": 0,
+    "first_log_time": "2019-06-06 15:31:53",
+    "latest_log_time": "2019-06-06 16:07:58",
+    "runtime": "0:36:05",
+    "shutdown_reason": "Received SIGTERM",
+    "finish_reason": "shutdown",
+    "last_update_time": "2019-06-06 16:08:14",
+    "head": "2019-06-06 15:31:53 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: Guba)\n2019-06-06 15:31:53 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.3 (default, Mar 27 2019, 16:54:48) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit\n2019-06-06 15:31:53 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'Guba', 'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 1, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'LOG_FILE': 'logs/Guba/NewsUrlSpider/2019-06-06T15_31_48.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'Guba.spiders', 'ROBOTSTXT_OBEY': True, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['Guba.spiders']}\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled extensions:\n['scrapy.extensions.corestats.CoreStats',\n 'scrapy.extensions.memusage.MemoryUsage',\n 'scrapy.extensions.logstats.LogStats']\n2019-06-06 15:31:53 [NewsUrlSpider] INFO: Reading start URLs from redis key 'Guba:start_urls' (batch size: 8, encoding: utf-8\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled downloader middlewares:\n['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n 'Guba.middlewares.RandomUserAgentMiddleware',\n 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled spider middlewares:\n['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled item pipelines:\n['Guba.pipelines.GubaPipeline']\n2019-06-06 15:31:53 [scrapy.core.engine] INFO: Spider opened\n\n2019-06-06 15:31:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:32:53 [scrapy.extensions.logstats] INFO: Crawled 46 pages (at 46 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:33:53 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:34:53 [scrapy.extensions.logstats] INFO: Crawled 142 pages (at 46 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:35:53 [scrapy.extensions.logstats] INFO: Crawled 191 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:36:53 [scrapy.extensions.logstats] INFO: Crawled 235 pages (at 44 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 15:37:53 [scrapy.extensions.logstats] INFO: Crawled 285 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:38:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,600349,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 15:38:53 [scrapy.extensions.logstats] INFO: Crawled 335 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:39:53 [scrapy.extensions.logstats] INFO: Crawled 383 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:40:53 [scrapy.extensions.logstats] INFO: Crawled 431 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:41:53 [scrapy.extensions.logstats] INFO: Crawled 478 pages (at 47 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:42:53 [scrapy.extensions.logstats] INFO: Crawled 527 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:43:53 [scrapy.extensions.logstats] INFO: Crawled 577 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:44:53 [scrapy.extensions.logstats] INFO: Crawled 626 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:45:53 [scrapy.extensions.logstats] INFO: Crawled 673 pages (at 47 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:46:53 [scrapy.extensions.logstats] INFO: Crawled 723 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:47:53 [scrapy.extensions.logstats] INFO: Crawled 771 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:48:53 [scrapy.extensions.logstats] INFO: Crawled 819 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:49:53 [scrapy.extensions.logstats] INFO: Crawled 867 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 15:50:14 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,601236,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 15:50:53 [scrapy.extensions.logstats] INFO: Crawled 915 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:51:53 [scrapy.extensions.logstats] INFO: Crawled 965 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:52:53 [scrapy.extensions.logstats] INFO: Crawled 1014 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:53:53 [scrapy.extensions.logstats] INFO: Crawled 1063 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:54:53 [scrapy.extensions.logstats] INFO: Crawled 1111 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:55:53 [scrapy.extensions.logstats] INFO: Crawled 1159 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:56:53 [scrapy.extensions.logstats] INFO: Crawled 1209 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:57:53 [scrapy.extensions.logstats] INFO: Crawled 1258 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:58:53 [scrapy.extensions.logstats] INFO: Crawled 1307 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 15:59:27 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,603711,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 15:59:53 [scrapy.extensions.logstats] INFO: Crawled 1350 pages (at 43 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:00:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,603863,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 16:00:53 [scrapy.extensions.logstats] INFO: Crawled 1399 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 16:01:53 [scrapy.extensions.logstats] INFO: Crawled 1451 pages (at 52 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:02:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900911,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:02:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900913,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)",
+    "tail": "2019-06-06 15:31:53 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: Guba)\n2019-06-06 15:31:53 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.3 (default, Mar 27 2019, 16:54:48) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit\n2019-06-06 15:31:53 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'Guba', 'CONCURRENT_REQUESTS': 8, 'DOWNLOAD_DELAY': 1, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'LOG_FILE': 'logs/Guba/NewsUrlSpider/2019-06-06T15_31_48.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'Guba.spiders', 'ROBOTSTXT_OBEY': True, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['Guba.spiders']}\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled extensions:\n['scrapy.extensions.corestats.CoreStats',\n 'scrapy.extensions.memusage.MemoryUsage',\n 'scrapy.extensions.logstats.LogStats']\n2019-06-06 15:31:53 [NewsUrlSpider] INFO: Reading start URLs from redis key 'Guba:start_urls' (batch size: 8, encoding: utf-8\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled downloader middlewares:\n['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n 'Guba.middlewares.RandomUserAgentMiddleware',\n 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled spider middlewares:\n['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n2019-06-06 15:31:53 [scrapy.middleware] INFO: Enabled item pipelines:\n['Guba.pipelines.GubaPipeline']\n2019-06-06 15:31:53 [scrapy.core.engine] INFO: Spider opened\n\n2019-06-06 15:31:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:32:53 [scrapy.extensions.logstats] INFO: Crawled 46 pages (at 46 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:33:53 [scrapy.extensions.logstats] INFO: Crawled 96 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:34:53 [scrapy.extensions.logstats] INFO: Crawled 142 pages (at 46 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:35:53 [scrapy.extensions.logstats] INFO: Crawled 191 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:36:53 [scrapy.extensions.logstats] INFO: Crawled 235 pages (at 44 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 15:37:53 [scrapy.extensions.logstats] INFO: Crawled 285 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:38:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,600349,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 15:38:53 [scrapy.extensions.logstats] INFO: Crawled 335 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:39:53 [scrapy.extensions.logstats] INFO: Crawled 383 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:40:53 [scrapy.extensions.logstats] INFO: Crawled 431 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:41:53 [scrapy.extensions.logstats] INFO: Crawled 478 pages (at 47 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:42:53 [scrapy.extensions.logstats] INFO: Crawled 527 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:43:53 [scrapy.extensions.logstats] INFO: Crawled 577 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:44:53 [scrapy.extensions.logstats] INFO: Crawled 626 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:45:53 [scrapy.extensions.logstats] INFO: Crawled 673 pages (at 47 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:46:53 [scrapy.extensions.logstats] INFO: Crawled 723 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:47:53 [scrapy.extensions.logstats] INFO: Crawled 771 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:48:53 [scrapy.extensions.logstats] INFO: Crawled 819 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:49:53 [scrapy.extensions.logstats] INFO: Crawled 867 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 15:50:14 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,601236,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 15:50:53 [scrapy.extensions.logstats] INFO: Crawled 915 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:51:53 [scrapy.extensions.logstats] INFO: Crawled 965 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:52:53 [scrapy.extensions.logstats] INFO: Crawled 1014 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:53:53 [scrapy.extensions.logstats] INFO: Crawled 1063 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:54:53 [scrapy.extensions.logstats] INFO: Crawled 1111 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:55:53 [scrapy.extensions.logstats] INFO: Crawled 1159 pages (at 48 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:56:53 [scrapy.extensions.logstats] INFO: Crawled 1209 pages (at 50 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:57:53 [scrapy.extensions.logstats] INFO: Crawled 1258 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 15:58:53 [scrapy.extensions.logstats] INFO: Crawled 1307 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 15:59:27 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,603711,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 15:59:53 [scrapy.extensions.logstats] INFO: Crawled 1350 pages (at 43 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:00:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,603863,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 16:00:53 [scrapy.extensions.logstats] INFO: Crawled 1399 pages (at 49 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 16:01:53 [scrapy.extensions.logstats] INFO: Crawled 1451 pages (at 52 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:02:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900911,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:02:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900913,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:02:53 [scrapy.extensions.logstats] INFO: Crawled 1486 pages (at 35 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:02:56 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900916,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 16:03:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900921,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:03:20 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900936,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:03:25 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900940,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:03:28 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900942,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:03:29 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900943,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n2019-06-06 16:03:29 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900945,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'\n\n2019-06-06 16:03:53 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 37 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 16:04:53 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 16:05:53 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-06 16:06:53 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:07:53 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n2019-06-06 16:07:58 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force \n2019-06-06 16:07:58 [scrapy.core.engine] INFO: Closing spider (shutdown)\n2019-06-06 16:07:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n{'downloader/request_bytes': 476362,\n 'downloader/request_count': 1530,\n 'downloader/request_method_count/GET': 1530,\n 'downloader/response_bytes': 26075897,\n 'downloader/response_count': 1530,\n 'downloader/response_status_count/200': 1522,\n 'downloader/response_status_count/302': 7,\n 'downloader/response_status_count/404': 1,\n 'finish_reason': 'shutdown',\n 'finish_time': datetime.datetime(2019, 6, 6, 8, 7, 58, 317810),\n 'log_count/ERROR': 13,\n 'log_count/INFO': 45,\n 'memusage/max': 98529280,\n 'memusage/startup': 63684608,\n 'response_received_count': 1523,\n 'robotstxt/request_count': 1,\n 'robotstxt/response_count': 1,\n 'robotstxt/response_status_count/404': 1,\n 'scheduler/dequeued/redis': 1529,\n 'scheduler/enqueued/redis': 1529,\n 'spider_exceptions/AttributeError': 13,\n 'start_time': datetime.datetime(2019, 6, 6, 7, 31, 53, 937703)}\n2019-06-06 16:07:58 [scrapy.core.engine] INFO: Spider closed (shutdown)\n",
+    "first_log_timestamp": 1559806313,
+    "latest_log_timestamp": 1559808478,
+    "datas": [
+        [
+            "2019-06-06 15:31:53",
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:32:53",
+            46,
+            46,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:33:53",
+            96,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:34:53",
+            142,
+            46,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:35:53",
+            191,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:36:53",
+            235,
+            44,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:37:53",
+            285,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:38:53",
+            335,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:39:53",
+            383,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:40:53",
+            431,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:41:53",
+            478,
+            47,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:42:53",
+            527,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:43:53",
+            577,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:44:53",
+            626,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:45:53",
+            673,
+            47,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:46:53",
+            723,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:47:53",
+            771,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:48:53",
+            819,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:49:53",
+            867,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:50:53",
+            915,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:51:53",
+            965,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:52:53",
+            1014,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:53:53",
+            1063,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:54:53",
+            1111,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:55:53",
+            1159,
+            48,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:56:53",
+            1209,
+            50,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:57:53",
+            1258,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:58:53",
+            1307,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 15:59:53",
+            1350,
+            43,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:00:53",
+            1399,
+            49,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:01:53",
+            1451,
+            52,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:02:53",
+            1486,
+            35,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:03:53",
+            1523,
+            37,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:04:53",
+            1523,
+            0,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:05:53",
+            1523,
+            0,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:06:53",
+            1523,
+            0,
+            0,
+            0
+        ],
+        [
+            "2019-06-06 16:07:53",
+            1523,
+            0,
+            0,
+            0
+        ]
+    ],
+    "latest_matches": {
+        "telnet_console": "",
+        "resuming_crawl": "",
+        "latest_offsite": "",
+        "latest_duplicate": "",
+        "latest_crawl": "",
+        "latest_scrape": "",
+        "latest_item": "",
+        "latest_stat": "2019-06-06 16:07:53 [scrapy.extensions.logstats] INFO: Crawled 1523 pages (at 0 pages/min), scraped 0 items (at 0 items/min)"
+    },
+    "latest_crawl_timestamp": 0,
+    "latest_scrape_timestamp": 0,
+    "log_categories": {
+        "critical_logs": {
+            "count": 0,
+            "details": []
+        },
+        "error_logs": {
+            "count": 13,
+            "details": [
+                "2019-06-06 15:38:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,600349,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 15:50:14 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,601236,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 15:59:27 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,603711,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:00:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,603863,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:02:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900911,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:02:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900913,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:02:56 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900916,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:03:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900921,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:03:20 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900936,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:03:25 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900940,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:03:28 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900942,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:03:29 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900943,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'",
+                "2019-06-06 16:03:29 [scrapy.core.scraper] ERROR: Spider error processing <GET http://guba.eastmoney.com/list,900945,1,f_1.html> (referer: None)\nTraceback (most recent call last):\n  File \"/Users/suool/anaconda3/lib/python3.7/site-packages/twisted/internet/defer.py\", line 654, in _runCallbacks\n    current.result = callback(current.result, *args, **kw)\n  File \"/Users/suool/PycharmProjects/Guba/Guba/spiders/NewsSpider.py\", line 42, in parse\n    page_num = page_num.extract_first().split(\"|\")[-3:]\nAttributeError: 'NoneType' object has no attribute 'split'"
+            ]
+        },
+        "warning_logs": {
+            "count": 0,
+            "details": []
+        },
+        "redirect_logs": {
+            "count": 7,
+            "details": []
+        },
+        "retry_logs": {
+            "count": 0,
+            "details": []
+        },
+        "ignore_logs": {
+            "count": 0,
+            "details": []
+        }
+    },
+    "crawler_stats": {
+        "source": "log",
+        "last_update_time": "2019-06-06 16:07:58",
+        "last_update_timestamp": 1559808478,
+        "downloader/request_bytes": 476362,
+        "downloader/request_count": 1530,
+        "downloader/request_method_count/GET": 1530,
+        "downloader/response_bytes": 26075897,
+        "downloader/response_count": 1530,
+        "downloader/response_status_count/200": 1522,
+        "downloader/response_status_count/302": 7,
+        "downloader/response_status_count/404": 1,
+        "finish_reason": "shutdown",
+        "finish_time": "datetime.datetime(2019, 6, 6, 8, 7, 58, 317810)",
+        "log_count/ERROR": 13,
+        "log_count/INFO": 45,
+        "memusage/max": 98529280,
+        "memusage/startup": 63684608,
+        "response_received_count": 1523,
+        "robotstxt/request_count": 1,
+        "robotstxt/response_count": 1,
+        "robotstxt/response_status_count/404": 1,
+        "scheduler/dequeued/redis": 1529,
+        "scheduler/enqueued/redis": 1529,
+        "spider_exceptions/AttributeError": 13,
+        "start_time": "datetime.datetime(2019, 6, 6, 7, 31, 53, 937703)"
+    },
+    "last_update_timestamp": 1559808494,
+    "logparser_version": "0.8.1",
+    "crawler_engine": {}
+}

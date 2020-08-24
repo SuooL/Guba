@@ -1,0 +1,2317 @@
+{
+    "log_path": "./logs/Guba/CommentPageUrlSpider/2019-06-10T16_18_30.log",
+    "json_path": "./logs/Guba/CommentPageUrlSpider/2019-06-10T16_18_30.json",
+    "json_url": "http://127.0.0.1:6800/logs/Guba/CommentPageUrlSpider/2019-06-10T16_18_30.json",
+    "size": 46083,
+    "position": 46083,
+    "status": "ok",
+    "_head": 100,
+    "pages": 7734,
+    "items": 49415,
+    "first_log_time": "2019-06-10 16:18:37",
+    "latest_log_time": "2019-06-10 21:35:31",
+    "runtime": "5:16:54",
+    "shutdown_reason": "Received SIGTERM",
+    "finish_reason": "shutdown",
+    "last_update_time": "2019-06-10 21:36:08",
+    "head": "2019-06-10 16:18:37 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: Guba)\n2019-06-10 16:18:37 [scrapy.utils.log] INFO: Versions: lxml 4.3.2.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.3 (default, Mar 27 2019, 16:54:48) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.6.1, Platform Darwin-18.6.0-x86_64-i386-64bit\n2019-06-10 16:18:37 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'Guba', 'CONCURRENT_REQUESTS': 4, 'DOWNLOAD_DELAY': 2, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'LOG_FILE': 'logs/Guba/CommentPageUrlSpider/2019-06-10T16_18_30.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'Guba.spiders', 'ROBOTSTXT_OBEY': True, 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_MODULES': ['Guba.spiders']}\n2019-06-10 16:18:37 [scrapy.middleware] INFO: Enabled extensions:\n['scrapy.extensions.corestats.CoreStats',\n 'scrapy.extensions.memusage.MemoryUsage',\n 'scrapy.extensions.logstats.LogStats']\n2019-06-10 16:18:37 [CommentPageUrlSpider] INFO: Reading start URLs from redis key 'NewsContent:start_urls' (batch size: 4, encoding: utf-8\n2019-06-10 16:18:37 [scrapy.middleware] INFO: Enabled downloader middlewares:\n['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n 'Guba.middlewares.RandomUserAgentMiddleware',\n 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n2019-06-10 16:18:37 [scrapy.middleware] INFO: Enabled spider middlewares:\n['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n2019-06-10 16:18:37 [scrapy.middleware] INFO: Enabled item pipelines:\n['Guba.pipelines.GubaPipeline']\n2019-06-10 16:18:37 [scrapy.core.engine] INFO: Spider opened\n\n2019-06-10 16:18:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n\n2019-06-10 16:19:37 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 25 pages/min), scraped 388 items (at 388 items/min)\n\n2019-06-10 16:20:37 [scrapy.extensions.logstats] INFO: Crawled 49 pages (at 24 pages/min), scraped 471 items (at 83 items/min)\n\n2019-06-10 16:21:37 [scrapy.extensions.logstats] INFO: Crawled 73 pages (at 24 pages/min), scraped 531 items (at 60 items/min)\n\n2019-06-10 16:22:37 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 24 pages/min), scraped 642 items (at 111 items/min)\n\n2019-06-10 16:23:37 [scrapy.extensions.logstats] INFO: Crawled 122 pages (at 25 pages/min), scraped 725 items (at 83 items/min)\n\n2019-06-10 16:24:37 [scrapy.extensions.logstats] INFO: Crawled 147 pages (at 25 pages/min), scraped 874 items (at 149 items/min)\n\n2019-06-10 16:25:37 [scrapy.extensions.logstats] INFO: Crawled 172 pages (at 25 pages/min), scraped 958 items (at 84 items/min)\n\n2019-06-10 16:26:37 [scrapy.extensions.logstats] INFO: Crawled 197 pages (at 25 pages/min), scraped 1160 items (at 202 items/min)\n\n2019-06-10 16:27:37 [scrapy.extensions.logstats] INFO: Crawled 220 pages (at 23 pages/min), scraped 1453 items (at 293 items/min)\n\n2019-06-10 16:28:37 [scrapy.extensions.logstats] INFO: Crawled 243 pages (at 23 pages/min), scraped 1530 items (at 77 items/min)\n\n2019-06-10 16:29:37 [scrapy.extensions.logstats] INFO: Crawled 268 pages (at 25 pages/min), scraped 1761 items (at 231 items/min)\n\n2019-06-10 16:30:37 [scrapy.extensions.logstats] INFO: Crawled 292 pages (at 24 pages/min), scraped 1792 items (at 31 items/min)\n\n2019-06-10 16:31:37 [scrapy.extensions.logstats] INFO: Crawled 318 pages (at 26 pages/min), scraped 1875 items (at 83 items/min)\n\n2019-06-10 16:32:37 [scrapy.extensions.logstats] INFO: Crawled 343 pages (at 25 pages/min), scraped 2068 items (at 193 items/min)\n\n2019-06-10 16:33:37 [scrapy.extensions.logstats] INFO: Crawled 367 pages (at 24 pages/min), scraped 2136 items (at 68 items/min)\n\n2019-06-10 16:34:37 [scrapy.extensions.logstats] INFO: Crawled 393 pages (at 26 pages/min), scraped 2214 items (at 78 items/min)\n\n2019-06-10 16:35:37 [scrapy.extensions.logstats] INFO: Crawled 418 pages (at 25 pages/min), scraped 2255 items (at 41 items/min)\n\n2019-06-10 16:36:37 [scrapy.extensions.logstats] INFO: Crawled 443 pages (at 25 pages/min), scraped 2302 items (at 47 items/min)\n\n2019-06-10 16:37:37 [scrapy.extensions.logstats] INFO: Crawled 465 pages (at 22 pages/min), scraped 2345 items (at 43 items/min)\n\n2019-06-10 16:38:37 [scrapy.extensions.logstats] INFO: Crawled 489 pages (at 24 pages/min), scraped 2514 items (at 169 items/min)\n\n2019-06-10 16:39:37 [scrapy.extensions.logstats] INFO: Crawled 513 pages (at 24 pages/min), scraped 2677 items (at 163 items/min)\n\n2019-06-10 16:40:37 [scrapy.extensions.logstats] INFO: Crawled 539 pages (at 26 pages/min), scraped 2921 items (at 244 items/min)\n\n2019-06-10 16:41:37 [scrapy.extensions.logstats] INFO: Crawled 563 pages (at 24 pages/min), scraped 2982 items (at 61 items/min)\n\n2019-06-10 16:42:37 [scrapy.extensions.logstats] INFO: Crawled 587 pages (at 24 pages/min), scraped 3176 items (at 194 items/min)\n\n2019-06-10 16:43:37 [scrapy.extensions.logstats] INFO: Crawled 611 pages (at 24 pages/min), scraped 3243 items (at 67 items/min)\n\n2019-06-10 16:44:37 [scrapy.extensions.logstats] INFO: Crawled 636 pages (at 25 pages/min), scraped 3383 items (at 140 items/min)\n\n2019-06-10 16:45:37 [scrapy.extensions.logstats] INFO: Crawled 660 pages (at 24 pages/min), scraped 3482 items (at 99 items/min)\n\n2019-06-10 16:46:37 [scrapy.extensions.logstats] INFO: Crawled 685 pages (at 25 pages/min), scraped 3574 items (at 92 items/min)\n\n2019-06-10 16:47:37 [scrapy.extensions.logstats] INFO: Crawled 710 pages (at 25 pages/min), scraped 3662 items (at 88 items/min)\n\n2019-06-10 16:48:37 [scrapy.extensions.logstats] INFO: Crawled 735 pages (at 25 pages/min), scraped 3758 items (at 96 items/min)\n\n2019-06-10 16:49:37 [scrapy.extensions.logstats] INFO: Crawled 760 pages (at 25 pages/min), scraped 3806 items (at 48 items/min)\n\n2019-06-10 16:50:37 [scrapy.extensions.logstats] INFO: Crawled 785 pages (at 25 pages/min), scraped 3928 items (at 122 items/min)\n\n2019-06-10 16:51:37 [scrapy.extensions.logstats] INFO: Crawled 809 pages (at 24 pages/min), scraped 4094 items (at 166 items/min)\n\n2019-06-10 16:52:37 [scrapy.extensions.logstats] INFO: Crawled 833 pages (at 24 pages/min), scraped 4386 items (at 292 items/min)\n\n2019-06-10 16:53:37 [scrapy.extensions.logstats] INFO: Crawled 859 pages (at 26 pages/min), scraped 4571 items (at 185 items/min)\n\n2019-06-10 16:54:37 [scrapy.extensions.logstats] INFO: Crawled 883 pages (at 24 pages/min), scraped 4751 items (at 180 items/min)\n\n2019-06-10 16:55:37 [scrapy.extensions.logstats] INFO: Crawled 906 pages (at 23 pages/min), scraped 4857 items (at 106 items/min)\n\n2019-06-10 16:56:37 [scrapy.extensions.logstats] INFO: Crawled 931 pages (at 25 pages/min), scraped 5045 items (at 188 items/min)\n\n2019-06-10 16:57:37 [scrapy.extensions.logstats] INFO: Crawled 954 pages (at 23 pages/min), scraped 5217 items (at 172 items/min)\n\n2019-06-10 16:58:37 [scrapy.extensions.logstats] INFO: Crawled 980 pages (at 26 pages/min), scraped 5350 items (at 133 items/min)\n\n2019-06-10 16:59:37 [scrapy.extensions.logstats] INFO: Crawled 1003 pages (at 23 pages/min), scraped 5443 items (at 93 items/min)\n\n2019-06-10 17:00:37 [scrapy.extensions.logstats] INFO: Crawled 1028 pages (at 25 pages/min), scraped 5537 items (at 94 items/min)\n\n2019-06-10 17:01:37 [scrapy.extensions.logstats] INFO: Crawled 1052 pages (at 24 pages/min), scraped 5606 items (at 69 items/min)\n2019-06-10 17:02:12 [Guba.spiders.CommentPageUrlSpider] ERROR: http://guba.eastmoney.com/news,601678,48255953.html json 解析出错, 错误原因 Error 60 connecting to 120.***.***.***:6379. Operation timed out.\n\n2019-06-10 17:02:37 [scrapy.extensions.logstats] INFO: Crawled 1075 pages (at 23 pages/min), scraped 5727 items (at 121 items/min)\n\n2019-06-10 17:03:37 [scrapy.extensions.logstats] INFO: Crawled 1098 pages (at 23 pages/min), scraped 5796 items (at 69 items/min)\n\n2019-06-10 17:04:37 [scrapy.extensions.logstats] INFO: Crawled 1124 pages (at 26 pages/min), scraped 5882 items (at 86 items/min)\n\n2019-06-10 17:05:37 [scrapy.extensions.logstats] INFO: Crawled 1150 pages (at 26 pages/min), scraped 6012 items (at 130 items/min)\n\n2019-06-10 17:06:37 [scrapy.extensions.logstats] INFO: Crawled 1173 pages (at 23 pages/min), scraped 6180 items (at 168 items/min)\n\n2019-06-10 17:07:37 [scrapy.extensions.logstats] INFO: Crawled 1197 pages (at 24 pages/min), scraped 6492 items (at 312 items/min)\n\n2019-06-10 17:08:37 [scrapy.extensions.logstats] INFO: Crawled 1222 pages (at 25 pages/min), scraped 6672 items (at 180 items/min)\n\n2019-06-10 17:09:37 [scrapy.extensions.logstats] INFO: Crawled 1245 pages (at 23 pages/min), scraped 6754 items (at 82 items/min)\n\n2019-06-10 17:10:37 [scrapy.extensions.logstats] INFO: Crawled 1270 pages (at 25 pages/min), scraped 7248 items (at 494 items/min)\n\n2019-06-10 17:11:37 [scrapy.extensions.logstats] INFO: Crawled 1294 pages (at 24 pages/min), scraped 7334 items (at 86 items/min)\n\n2019-06-10 17:12:37 [scrapy.extensions.logstats] INFO: Crawled 1320 pages (at 26 pages/min), scraped 7444 items (at 110 items/min)\n\n2019-06-10 17:13:37 [scrapy.extensions.logstats] INFO: Crawled 1345 pages (at 25 pages/min), scraped 7708 items (at 264 items/min)\n\n2019-06-10 17:14:37 [scrapy.extensions.logstats] INFO: Crawled 1370 pages (at 25 pages/min), scraped 8037 items (at 329 items/min)\n\n2019-06-10 17:15:37 [scrapy.extensions.logstats] INFO: Crawled 1395 pages (at 25 pages/min), scraped 8375 items (at 338 items/min)\n\n2019-06-10 17:16:37 [scrapy.extensions.logstats] INFO: Crawled 1420 pages (at 25 pages/min), scraped 8700 items (at 325 items/min)\n\n2019-06-10 17:17:37 [scrapy.extensions.logstats] INFO: Crawled 1444 pages (at 24 pages/min), scraped 8933 items (at 233 items/min)\n\n2019-06-10 17:18:37 [scrapy.extensions.logstats] INFO: Crawled 1469 pages (at 25 pages/min), scraped 9205 items (at 272 items/min)\n\n2019-06-10 17:19:37 [scrapy.extensions.logstats] INFO: Crawled 1495 pages (at 26 pages/min), scraped 9737 items (at 532 items/min)\n\n2019-06-10 17:20:37 [scrapy.extensions.logstats] INFO: Crawled 1514 pages (at 19 pages/min), scraped 9804 items (at 67 items/min)\n\n2019-06-10 17:21:37 [scrapy.extensions.logstats] INFO: Crawled 1539 pages (at 25 pages/min), scraped 9894 items (at 90 items/min)\n\n2019-06-10 17:22:37 [scrapy.extensions.logstats] INFO: Crawled 1561 pages (at 22 pages/min), scraped 10030 items (at 136 items/min)\n\n2019-06-10 17:23:37 [scrapy.extensions.logstats] INFO: Crawled 1583 pages (at 22 pages/min), scraped 10060 items (at 30 items/min)\n\n2019-06-10 17:24:37 [scrapy.extensions.logstats] INFO: Crawled 1609 pages (at 26 pages/min), scraped 10159 items (at 99 items/min)\n\n2019-06-10 17:25:37 [scrapy.extensions.logstats] INFO: Crawled 1632 pages (at 23 pages/min), scraped 10244 items (at 85 items/min)\n",
+    "tail": "2019-06-10 18:46:37 [scrapy.extensions.logstats] INFO: Crawled 3600 pages (at 23 pages/min), scraped 23008 items (at 229 items/min)\n\n2019-06-10 18:47:37 [scrapy.extensions.logstats] INFO: Crawled 3626 pages (at 26 pages/min), scraped 23099 items (at 91 items/min)\n\n2019-06-10 18:48:37 [scrapy.extensions.logstats] INFO: Crawled 3650 pages (at 24 pages/min), scraped 23309 items (at 210 items/min)\n\n2019-06-10 18:49:37 [scrapy.extensions.logstats] INFO: Crawled 3675 pages (at 25 pages/min), scraped 23395 items (at 86 items/min)\n\n2019-06-10 18:50:37 [scrapy.extensions.logstats] INFO: Crawled 3699 pages (at 24 pages/min), scraped 23480 items (at 85 items/min)\n\n2019-06-10 18:51:37 [scrapy.extensions.logstats] INFO: Crawled 3723 pages (at 24 pages/min), scraped 23628 items (at 148 items/min)\n\n2019-06-10 18:52:37 [scrapy.extensions.logstats] INFO: Crawled 3746 pages (at 23 pages/min), scraped 23828 items (at 200 items/min)\n\n2019-06-10 18:53:37 [scrapy.extensions.logstats] INFO: Crawled 3769 pages (at 23 pages/min), scraped 23983 items (at 155 items/min)\n\n2019-06-10 18:54:37 [scrapy.extensions.logstats] INFO: Crawled 3793 pages (at 24 pages/min), scraped 24243 items (at 260 items/min)\n\n2019-06-10 18:55:37 [scrapy.extensions.logstats] INFO: Crawled 3819 pages (at 26 pages/min), scraped 24469 items (at 226 items/min)\n\n2019-06-10 18:56:37 [scrapy.extensions.logstats] INFO: Crawled 3841 pages (at 22 pages/min), scraped 24656 items (at 187 items/min)\n\n2019-06-10 18:57:37 [scrapy.extensions.logstats] INFO: Crawled 3866 pages (at 25 pages/min), scraped 25156 items (at 500 items/min)\n\n2019-06-10 18:58:37 [scrapy.extensions.logstats] INFO: Crawled 3891 pages (at 25 pages/min), scraped 25551 items (at 395 items/min)\n\n2019-06-10 18:59:37 [scrapy.extensions.logstats] INFO: Crawled 3916 pages (at 25 pages/min), scraped 25619 items (at 68 items/min)\n\n2019-06-10 19:00:37 [scrapy.extensions.logstats] INFO: Crawled 3942 pages (at 26 pages/min), scraped 25722 items (at 103 items/min)\n\n2019-06-10 19:01:37 [scrapy.extensions.logstats] INFO: Crawled 3965 pages (at 23 pages/min), scraped 25768 items (at 46 items/min)\n\n2019-06-10 19:02:37 [scrapy.extensions.logstats] INFO: Crawled 3990 pages (at 25 pages/min), scraped 25814 items (at 46 items/min)\n\n2019-06-10 19:03:37 [scrapy.extensions.logstats] INFO: Crawled 4015 pages (at 25 pages/min), scraped 25899 items (at 85 items/min)\n\n2019-06-10 19:04:37 [scrapy.extensions.logstats] INFO: Crawled 4039 pages (at 24 pages/min), scraped 25985 items (at 86 items/min)\n\n2019-06-10 19:05:37 [scrapy.extensions.logstats] INFO: Crawled 4063 pages (at 24 pages/min), scraped 26347 items (at 362 items/min)\n\n2019-06-10 19:06:37 [scrapy.extensions.logstats] INFO: Crawled 4087 pages (at 24 pages/min), scraped 26475 items (at 128 items/min)\n\n2019-06-10 19:07:37 [scrapy.extensions.logstats] INFO: Crawled 4111 pages (at 24 pages/min), scraped 26623 items (at 148 items/min)\n\n2019-06-10 19:08:37 [scrapy.extensions.logstats] INFO: Crawled 4136 pages (at 25 pages/min), scraped 26873 items (at 250 items/min)\n\n2019-06-10 19:09:37 [scrapy.extensions.logstats] INFO: Crawled 4161 pages (at 25 pages/min), scraped 27111 items (at 238 items/min)\n\n2019-06-10 19:10:37 [scrapy.extensions.logstats] INFO: Crawled 4186 pages (at 25 pages/min), scraped 27195 items (at 84 items/min)\n\n2019-06-10 19:11:37 [scrapy.extensions.logstats] INFO: Crawled 4209 pages (at 23 pages/min), scraped 27356 items (at 161 items/min)\n\n2019-06-10 19:12:37 [scrapy.extensions.logstats] INFO: Crawled 4234 pages (at 25 pages/min), scraped 27461 items (at 105 items/min)\n\n2019-06-10 19:13:37 [scrapy.extensions.logstats] INFO: Crawled 4259 pages (at 25 pages/min), scraped 27638 items (at 177 items/min)\n\n2019-06-10 19:14:37 [scrapy.extensions.logstats] INFO: Crawled 4284 pages (at 25 pages/min), scraped 27666 items (at 28 items/min)\n\n2019-06-10 19:15:37 [scrapy.extensions.logstats] INFO: Crawled 4308 pages (at 24 pages/min), scraped 27710 items (at 44 items/min)\n\n2019-06-10 19:16:37 [scrapy.extensions.logstats] INFO: Crawled 4332 pages (at 24 pages/min), scraped 27763 items (at 53 items/min)\n\n2019-06-10 19:17:37 [scrapy.extensions.logstats] INFO: Crawled 4356 pages (at 24 pages/min), scraped 27862 items (at 99 items/min)\n\n2019-06-10 19:18:37 [scrapy.extensions.logstats] INFO: Crawled 4379 pages (at 23 pages/min), scraped 28316 items (at 454 items/min)\n\n2019-06-10 19:19:37 [scrapy.extensions.logstats] INFO: Crawled 4402 pages (at 23 pages/min), scraped 28510 items (at 194 items/min)\n\n2019-06-10 19:20:37 [scrapy.extensions.logstats] INFO: Crawled 4426 pages (at 24 pages/min), scraped 28854 items (at 344 items/min)\n\n2019-06-10 19:21:37 [scrapy.extensions.logstats] INFO: Crawled 4450 pages (at 24 pages/min), scraped 29248 items (at 394 items/min)\n\n2019-06-10 19:22:37 [scrapy.extensions.logstats] INFO: Crawled 4474 pages (at 24 pages/min), scraped 29325 items (at 77 items/min)\n\n2019-06-10 19:23:37 [scrapy.extensions.logstats] INFO: Crawled 4498 pages (at 24 pages/min), scraped 29390 items (at 65 items/min)\n\n2019-06-10 19:24:37 [scrapy.extensions.logstats] INFO: Crawled 4521 pages (at 23 pages/min), scraped 29465 items (at 75 items/min)\n\n2019-06-10 19:25:37 [scrapy.extensions.logstats] INFO: Crawled 4546 pages (at 25 pages/min), scraped 29561 items (at 96 items/min)\n\n2019-06-10 19:26:37 [scrapy.extensions.logstats] INFO: Crawled 4570 pages (at 24 pages/min), scraped 29679 items (at 118 items/min)\n\n2019-06-10 19:27:37 [scrapy.extensions.logstats] INFO: Crawled 4596 pages (at 26 pages/min), scraped 29752 items (at 73 items/min)\n\n2019-06-10 19:28:37 [scrapy.extensions.logstats] INFO: Crawled 4620 pages (at 24 pages/min), scraped 29921 items (at 169 items/min)\n\n2019-06-10 19:29:37 [scrapy.extensions.logstats] INFO: Crawled 4642 pages (at 22 pages/min), scraped 30065 items (at 144 items/min)\n\n2019-06-10 19:30:37 [scrapy.extensions.logstats] INFO: Crawled 4668 pages (at 26 pages/min), scraped 30138 items (at 73 items/min)\n\n2019-06-10 19:31:37 [scrapy.extensions.logstats] INFO: Crawled 4693 pages (at 25 pages/min), scraped 30203 items (at 65 items/min)\n\n2019-06-10 19:32:37 [scrapy.extensions.logstats] INFO: Crawled 4717 pages (at 24 pages/min), scraped 30286 items (at 83 items/min)\n\n2019-06-10 19:33:37 [scrapy.extensions.logstats] INFO: Crawled 4741 pages (at 24 pages/min), scraped 30350 items (at 64 items/min)\n\n2019-06-10 19:34:37 [scrapy.extensions.logstats] INFO: Crawled 4766 pages (at 25 pages/min), scraped 30426 items (at 76 items/min)\n\n2019-06-10 19:35:37 [scrapy.extensions.logstats] INFO: Crawled 4791 pages (at 25 pages/min), scraped 30637 items (at 211 items/min)\n\n2019-06-10 19:36:37 [scrapy.extensions.logstats] INFO: Crawled 4814 pages (at 23 pages/min), scraped 30828 items (at 191 items/min)\n\n2019-06-10 19:37:37 [scrapy.extensions.logstats] INFO: Crawled 4839 pages (at 25 pages/min), scraped 31014 items (at 186 items/min)\n\n2019-06-10 19:38:37 [scrapy.extensions.logstats] INFO: Crawled 4863 pages (at 24 pages/min), scraped 31266 items (at 252 items/min)\n\n2019-06-10 19:39:37 [scrapy.extensions.logstats] INFO: Crawled 4888 pages (at 25 pages/min), scraped 31456 items (at 190 items/min)\n\n2019-06-10 19:40:37 [scrapy.extensions.logstats] INFO: Crawled 4913 pages (at 25 pages/min), scraped 31503 items (at 47 items/min)\n\n2019-06-10 19:41:37 [scrapy.extensions.logstats] INFO: Crawled 4937 pages (at 24 pages/min), scraped 31800 items (at 297 items/min)\n\n2019-06-10 19:42:37 [scrapy.extensions.logstats] INFO: Crawled 4962 pages (at 25 pages/min), scraped 31960 items (at 160 items/min)\n2019-06-10 19:43:25 [Guba.spiders.CommentPageUrlSpider] ERROR: 评论部分用户 http://guba.eastmoney.com/news,601318,195812804.html json 解析出错, 错误原因 Unterminated string starting at: line 1 column 47 (char 46) \n\n2019-06-10 19:43:25 [Guba.spiders.CommentPageUrlSpider] ERROR: 评论部分用户 http://guba.eastmoney.com/news,601318,195812804.html json 解析出错, 错误原因 Unterminated string starting at: line 1 column 47 (char 46) \n\n\n2019-06-10 19:43:37 [scrapy.extensions.logstats] INFO: Crawled 4985 pages (at 23 pages/min), scraped 32289 items (at 329 items/min)\n\n2019-06-10 19:44:37 [scrapy.extensions.logstats] INFO: Crawled 5009 pages (at 24 pages/min), scraped 32670 items (at 381 items/min)\n\n2019-06-10 19:45:37 [scrapy.extensions.logstats] INFO: Crawled 5036 pages (at 27 pages/min), scraped 32816 items (at 146 items/min)\n\n2019-06-10 19:46:37 [scrapy.extensions.logstats] INFO: Crawled 5062 pages (at 26 pages/min), scraped 33017 items (at 201 items/min)\n\n2019-06-10 19:47:37 [scrapy.extensions.logstats] INFO: Crawled 5085 pages (at 23 pages/min), scraped 33225 items (at 208 items/min)\n\n2019-06-10 19:48:37 [scrapy.extensions.logstats] INFO: Crawled 5109 pages (at 24 pages/min), scraped 33344 items (at 119 items/min)\n\n2019-06-10 19:49:37 [scrapy.extensions.logstats] INFO: Crawled 5134 pages (at 25 pages/min), scraped 33532 items (at 188 items/min)\n\n2019-06-10 19:50:37 [scrapy.extensions.logstats] INFO: Crawled 5158 pages (at 24 pages/min), scraped 33790 items (at 258 items/min)\n\n2019-06-10 19:51:37 [scrapy.extensions.logstats] INFO: Crawled 5182 pages (at 24 pages/min), scraped 34156 items (at 366 items/min)\n\n2019-06-10 19:52:37 [scrapy.extensions.logstats] INFO: Crawled 5207 pages (at 25 pages/min), scraped 34509 items (at 353 items/min)\n\n2019-06-10 19:53:37 [scrapy.extensions.logstats] INFO: Crawled 5231 pages (at 24 pages/min), scraped 34736 items (at 227 items/min)\n\n2019-06-10 19:54:37 [scrapy.extensions.logstats] INFO: Crawled 5255 pages (at 24 pages/min), scraped 34969 items (at 233 items/min)\n\n2019-06-10 19:55:37 [scrapy.extensions.logstats] INFO: Crawled 5279 pages (at 24 pages/min), scraped 35185 items (at 216 items/min)\n\n2019-06-10 19:56:37 [scrapy.extensions.logstats] INFO: Crawled 5304 pages (at 25 pages/min), scraped 35304 items (at 119 items/min)\n\n2019-06-10 19:57:37 [scrapy.extensions.logstats] INFO: Crawled 5328 pages (at 24 pages/min), scraped 35433 items (at 129 items/min)\n\n2019-06-10 19:58:37 [scrapy.extensions.logstats] INFO: Crawled 5350 pages (at 22 pages/min), scraped 35487 items (at 54 items/min)\n\n2019-06-10 19:59:37 [scrapy.extensions.logstats] INFO: Crawled 5374 pages (at 24 pages/min), scraped 35646 items (at 159 items/min)\n\n2019-06-10 20:00:37 [scrapy.extensions.logstats] INFO: Crawled 5397 pages (at 23 pages/min), scraped 35688 items (at 42 items/min)\n\n2019-06-10 20:01:37 [scrapy.extensions.logstats] INFO: Crawled 5422 pages (at 25 pages/min), scraped 35784 items (at 96 items/min)\n\n2019-06-10 20:02:37 [scrapy.extensions.logstats] INFO: Crawled 5446 pages (at 24 pages/min), scraped 35912 items (at 128 items/min)\n\n2019-06-10 20:03:37 [scrapy.extensions.logstats] INFO: Crawled 5471 pages (at 25 pages/min), scraped 36236 items (at 324 items/min)\n\n2019-06-10 20:04:37 [scrapy.extensions.logstats] INFO: Crawled 5495 pages (at 24 pages/min), scraped 36404 items (at 168 items/min)\n\n2019-06-10 20:05:37 [scrapy.extensions.logstats] INFO: Crawled 5520 pages (at 25 pages/min), scraped 36572 items (at 168 items/min)\n\n2019-06-10 20:06:37 [scrapy.extensions.logstats] INFO: Crawled 5544 pages (at 24 pages/min), scraped 36859 items (at 287 items/min)\n\n2019-06-10 20:07:37 [scrapy.extensions.logstats] INFO: Crawled 5568 pages (at 24 pages/min), scraped 36959 items (at 100 items/min)\n\n2019-06-10 20:08:37 [scrapy.extensions.logstats] INFO: Crawled 5594 pages (at 26 pages/min), scraped 37183 items (at 224 items/min)\n\n2019-06-10 20:09:37 [scrapy.extensions.logstats] INFO: Crawled 5617 pages (at 23 pages/min), scraped 37361 items (at 178 items/min)\n\n2019-06-10 20:10:37 [scrapy.extensions.logstats] INFO: Crawled 5642 pages (at 25 pages/min), scraped 37503 items (at 142 items/min)\n\n2019-06-10 20:11:37 [scrapy.extensions.logstats] INFO: Crawled 5667 pages (at 25 pages/min), scraped 37548 items (at 45 items/min)\n\n2019-06-10 20:12:37 [scrapy.extensions.logstats] INFO: Crawled 5692 pages (at 25 pages/min), scraped 37719 items (at 171 items/min)\n\n2019-06-10 20:13:37 [scrapy.extensions.logstats] INFO: Crawled 5717 pages (at 25 pages/min), scraped 37926 items (at 207 items/min)\n\n2019-06-10 20:14:37 [scrapy.extensions.logstats] INFO: Crawled 5742 pages (at 25 pages/min), scraped 37982 items (at 56 items/min)\n\n2019-06-10 20:15:37 [scrapy.extensions.logstats] INFO: Crawled 5766 pages (at 24 pages/min), scraped 38048 items (at 66 items/min)\n\n2019-06-10 20:16:37 [scrapy.extensions.logstats] INFO: Crawled 5790 pages (at 24 pages/min), scraped 38269 items (at 221 items/min)\n\n2019-06-10 20:17:37 [scrapy.extensions.logstats] INFO: Crawled 5816 pages (at 26 pages/min), scraped 38456 items (at 187 items/min)\n\n2019-06-10 20:18:37 [scrapy.extensions.logstats] INFO: Crawled 5837 pages (at 21 pages/min), scraped 38494 items (at 38 items/min)\n\n2019-06-10 20:19:37 [scrapy.extensions.logstats] INFO: Crawled 5861 pages (at 24 pages/min), scraped 38547 items (at 53 items/min)\n\n2019-06-10 20:20:37 [scrapy.extensions.logstats] INFO: Crawled 5887 pages (at 26 pages/min), scraped 38623 items (at 76 items/min)\n\n2019-06-10 20:21:37 [scrapy.extensions.logstats] INFO: Crawled 5912 pages (at 25 pages/min), scraped 38749 items (at 126 items/min)\n\n2019-06-10 20:22:37 [scrapy.extensions.logstats] INFO: Crawled 5938 pages (at 26 pages/min), scraped 38885 items (at 136 items/min)\n\n2019-06-10 20:23:37 [scrapy.extensions.logstats] INFO: Crawled 5962 pages (at 24 pages/min), scraped 38922 items (at 37 items/min)\n\n2019-06-10 20:24:37 [scrapy.extensions.logstats] INFO: Crawled 5987 pages (at 25 pages/min), scraped 39026 items (at 104 items/min)\n\n2019-06-10 20:25:37 [scrapy.extensions.logstats] INFO: Crawled 6012 pages (at 25 pages/min), scraped 39062 items (at 36 items/min)\n\n2019-06-10 20:26:37 [scrapy.extensions.logstats] INFO: Crawled 6036 pages (at 24 pages/min), scraped 39257 items (at 195 items/min)\n\n2019-06-10 20:27:37 [scrapy.extensions.logstats] INFO: Crawled 6060 pages (at 24 pages/min), scraped 39283 items (at 26 items/min)\n\n2019-06-10 20:28:37 [scrapy.extensions.logstats] INFO: Crawled 6085 pages (at 25 pages/min), scraped 39360 items (at 77 items/min)\n\n2019-06-10 20:29:37 [scrapy.extensions.logstats] INFO: Crawled 6111 pages (at 26 pages/min), scraped 39532 items (at 172 items/min)\n\n2019-06-10 20:30:37 [scrapy.extensions.logstats] INFO: Crawled 6135 pages (at 24 pages/min), scraped 39839 items (at 307 items/min)\n\n2019-06-10 20:31:37 [scrapy.extensions.logstats] INFO: Crawled 6160 pages (at 25 pages/min), scraped 39967 items (at 128 items/min)\n\n2019-06-10 20:32:37 [scrapy.extensions.logstats] INFO: Crawled 6187 pages (at 27 pages/min), scraped 40052 items (at 85 items/min)\n\n2019-06-10 20:33:37 [scrapy.extensions.logstats] INFO: Crawled 6211 pages (at 24 pages/min), scraped 40111 items (at 59 items/min)\n\n2019-06-10 20:34:37 [scrapy.extensions.logstats] INFO: Crawled 6235 pages (at 24 pages/min), scraped 40252 items (at 141 items/min)\n\n2019-06-10 20:35:37 [scrapy.extensions.logstats] INFO: Crawled 6260 pages (at 25 pages/min), scraped 40333 items (at 81 items/min)\n\n2019-06-10 20:36:37 [scrapy.extensions.logstats] INFO: Crawled 6285 pages (at 25 pages/min), scraped 40512 items (at 179 items/min)\n\n2019-06-10 20:37:37 [scrapy.extensions.logstats] INFO: Crawled 6310 pages (at 25 pages/min), scraped 40636 items (at 124 items/min)\n\n2019-06-10 20:38:37 [scrapy.extensions.logstats] INFO: Crawled 6336 pages (at 26 pages/min), scraped 40673 items (at 37 items/min)\n\n2019-06-10 20:39:37 [scrapy.extensions.logstats] INFO: Crawled 6361 pages (at 25 pages/min), scraped 40727 items (at 54 items/min)\n\n2019-06-10 20:40:37 [scrapy.extensions.logstats] INFO: Crawled 6386 pages (at 25 pages/min), scraped 40759 items (at 32 items/min)\n\n2019-06-10 20:41:37 [scrapy.extensions.logstats] INFO: Crawled 6411 pages (at 25 pages/min), scraped 40967 items (at 208 items/min)\n\n2019-06-10 20:42:37 [scrapy.extensions.logstats] INFO: Crawled 6436 pages (at 25 pages/min), scraped 41145 items (at 178 items/min)\n\n2019-06-10 20:43:37 [scrapy.extensions.logstats] INFO: Crawled 6460 pages (at 24 pages/min), scraped 41416 items (at 271 items/min)\n\n2019-06-10 20:44:37 [scrapy.extensions.logstats] INFO: Crawled 6485 pages (at 25 pages/min), scraped 41490 items (at 74 items/min)\n\n2019-06-10 20:45:37 [scrapy.extensions.logstats] INFO: Crawled 6511 pages (at 26 pages/min), scraped 41610 items (at 120 items/min)\n\n2019-06-10 20:46:37 [scrapy.extensions.logstats] INFO: Crawled 6535 pages (at 24 pages/min), scraped 41832 items (at 222 items/min)\n\n2019-06-10 20:47:37 [scrapy.extensions.logstats] INFO: Crawled 6559 pages (at 24 pages/min), scraped 42100 items (at 268 items/min)\n\n2019-06-10 20:48:37 [scrapy.extensions.logstats] INFO: Crawled 6583 pages (at 24 pages/min), scraped 42283 items (at 183 items/min)\n\n2019-06-10 20:49:37 [scrapy.extensions.logstats] INFO: Crawled 6606 pages (at 23 pages/min), scraped 42392 items (at 109 items/min)\n\n2019-06-10 20:50:37 [scrapy.extensions.logstats] INFO: Crawled 6631 pages (at 25 pages/min), scraped 42579 items (at 187 items/min)\n\n2019-06-10 20:51:37 [scrapy.extensions.logstats] INFO: Crawled 6655 pages (at 24 pages/min), scraped 42848 items (at 269 items/min)\n\n2019-06-10 20:52:37 [scrapy.extensions.logstats] INFO: Crawled 6680 pages (at 25 pages/min), scraped 43221 items (at 373 items/min)\n\n2019-06-10 20:53:37 [scrapy.extensions.logstats] INFO: Crawled 6704 pages (at 24 pages/min), scraped 43364 items (at 143 items/min)\n\n2019-06-10 20:54:37 [scrapy.extensions.logstats] INFO: Crawled 6728 pages (at 24 pages/min), scraped 43575 items (at 211 items/min)\n\n2019-06-10 20:55:37 [scrapy.extensions.logstats] INFO: Crawled 6754 pages (at 26 pages/min), scraped 43760 items (at 185 items/min)\n\n2019-06-10 20:56:37 [scrapy.extensions.logstats] INFO: Crawled 6780 pages (at 26 pages/min), scraped 43849 items (at 89 items/min)\n\n2019-06-10 20:57:37 [scrapy.extensions.logstats] INFO: Crawled 6805 pages (at 25 pages/min), scraped 43980 items (at 131 items/min)\n\n2019-06-10 20:58:37 [scrapy.extensions.logstats] INFO: Crawled 6829 pages (at 24 pages/min), scraped 44112 items (at 132 items/min)\n\n2019-06-10 20:59:37 [scrapy.extensions.logstats] INFO: Crawled 6852 pages (at 23 pages/min), scraped 44351 items (at 239 items/min)\n\n2019-06-10 21:00:37 [scrapy.extensions.logstats] INFO: Crawled 6876 pages (at 24 pages/min), scraped 44476 items (at 125 items/min)\n\n2019-06-10 21:01:37 [scrapy.extensions.logstats] INFO: Crawled 6902 pages (at 26 pages/min), scraped 44518 items (at 42 items/min)\n\n2019-06-10 21:02:37 [scrapy.extensions.logstats] INFO: Crawled 6928 pages (at 26 pages/min), scraped 44659 items (at 141 items/min)\n\n2019-06-10 21:03:37 [scrapy.extensions.logstats] INFO: Crawled 6953 pages (at 25 pages/min), scraped 44810 items (at 151 items/min)\n\n2019-06-10 21:04:37 [scrapy.extensions.logstats] INFO: Crawled 6978 pages (at 25 pages/min), scraped 44973 items (at 163 items/min)\n\n2019-06-10 21:05:37 [scrapy.extensions.logstats] INFO: Crawled 7001 pages (at 23 pages/min), scraped 45189 items (at 216 items/min)\n\n2019-06-10 21:06:37 [scrapy.extensions.logstats] INFO: Crawled 7026 pages (at 25 pages/min), scraped 45373 items (at 184 items/min)\n\n2019-06-10 21:07:37 [scrapy.extensions.logstats] INFO: Crawled 7052 pages (at 26 pages/min), scraped 45630 items (at 257 items/min)\n\n2019-06-10 21:08:37 [scrapy.extensions.logstats] INFO: Crawled 7076 pages (at 24 pages/min), scraped 45820 items (at 190 items/min)\n\n2019-06-10 21:09:37 [scrapy.extensions.logstats] INFO: Crawled 7100 pages (at 24 pages/min), scraped 45870 items (at 50 items/min)\n\n2019-06-10 21:10:37 [scrapy.extensions.logstats] INFO: Crawled 7126 pages (at 26 pages/min), scraped 45952 items (at 82 items/min)\n\n2019-06-10 21:11:37 [scrapy.extensions.logstats] INFO: Crawled 7151 pages (at 25 pages/min), scraped 46044 items (at 92 items/min)\n\n2019-06-10 21:12:37 [scrapy.extensions.logstats] INFO: Crawled 7175 pages (at 24 pages/min), scraped 46168 items (at 124 items/min)\n\n2019-06-10 21:13:37 [scrapy.extensions.logstats] INFO: Crawled 7201 pages (at 26 pages/min), scraped 46216 items (at 48 items/min)\n\n2019-06-10 21:14:37 [scrapy.extensions.logstats] INFO: Crawled 7224 pages (at 23 pages/min), scraped 46293 items (at 77 items/min)\n\n2019-06-10 21:15:37 [scrapy.extensions.logstats] INFO: Crawled 7249 pages (at 25 pages/min), scraped 46423 items (at 130 items/min)\n\n2019-06-10 21:16:37 [scrapy.extensions.logstats] INFO: Crawled 7273 pages (at 24 pages/min), scraped 46551 items (at 128 items/min)\n\n2019-06-10 21:17:37 [scrapy.extensions.logstats] INFO: Crawled 7297 pages (at 24 pages/min), scraped 46705 items (at 154 items/min)\n\n2019-06-10 21:18:37 [scrapy.extensions.logstats] INFO: Crawled 7321 pages (at 24 pages/min), scraped 46850 items (at 145 items/min)\n\n2019-06-10 21:19:37 [scrapy.extensions.logstats] INFO: Crawled 7345 pages (at 24 pages/min), scraped 46946 items (at 96 items/min)\n\n2019-06-10 21:20:37 [scrapy.extensions.logstats] INFO: Crawled 7369 pages (at 24 pages/min), scraped 47065 items (at 119 items/min)\n\n2019-06-10 21:21:37 [scrapy.extensions.logstats] INFO: Crawled 7393 pages (at 24 pages/min), scraped 47247 items (at 182 items/min)\n\n2019-06-10 21:22:37 [scrapy.extensions.logstats] INFO: Crawled 7418 pages (at 25 pages/min), scraped 47442 items (at 195 items/min)\n\n2019-06-10 21:23:37 [scrapy.extensions.logstats] INFO: Crawled 7443 pages (at 25 pages/min), scraped 47533 items (at 91 items/min)\n\n2019-06-10 21:24:37 [scrapy.extensions.logstats] INFO: Crawled 7467 pages (at 24 pages/min), scraped 47737 items (at 204 items/min)\n\n2019-06-10 21:25:37 [scrapy.extensions.logstats] INFO: Crawled 7490 pages (at 23 pages/min), scraped 48020 items (at 283 items/min)\n\n2019-06-10 21:26:37 [scrapy.extensions.logstats] INFO: Crawled 7515 pages (at 25 pages/min), scraped 48267 items (at 247 items/min)\n\n2019-06-10 21:27:37 [scrapy.extensions.logstats] INFO: Crawled 7539 pages (at 24 pages/min), scraped 48562 items (at 295 items/min)\n\n2019-06-10 21:28:37 [scrapy.extensions.logstats] INFO: Crawled 7563 pages (at 24 pages/min), scraped 48671 items (at 109 items/min)\n\n2019-06-10 21:29:37 [scrapy.extensions.logstats] INFO: Crawled 7588 pages (at 25 pages/min), scraped 48805 items (at 134 items/min)\n\n2019-06-10 21:30:37 [scrapy.extensions.logstats] INFO: Crawled 7613 pages (at 25 pages/min), scraped 48974 items (at 169 items/min)\n\n2019-06-10 21:31:37 [scrapy.extensions.logstats] INFO: Crawled 7638 pages (at 25 pages/min), scraped 49087 items (at 113 items/min)\n\n2019-06-10 21:32:37 [scrapy.extensions.logstats] INFO: Crawled 7664 pages (at 26 pages/min), scraped 49126 items (at 39 items/min)\n\n2019-06-10 21:33:37 [scrapy.extensions.logstats] INFO: Crawled 7688 pages (at 24 pages/min), scraped 49156 items (at 30 items/min)\n\n2019-06-10 21:34:37 [scrapy.extensions.logstats] INFO: Crawled 7712 pages (at 24 pages/min), scraped 49346 items (at 190 items/min)\n2019-06-10 21:35:24 [scrapy.crawler] INFO: Received SIGTERM, shutting down gracefully. Send again to force \n2019-06-10 21:35:24 [scrapy.core.engine] INFO: Closing spider (shutdown)\n2019-06-10 21:35:31 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n{'downloader/request_bytes': 2431193,\n 'downloader/request_count': 7739,\n 'downloader/request_method_count/GET': 7739,\n 'downloader/response_bytes': 154176016,\n 'downloader/response_count': 7739,\n 'downloader/response_status_count/200': 7733,\n 'downloader/response_status_count/302': 3,\n 'downloader/response_status_count/404': 1,\n 'downloader/response_status_count/503': 2,\n 'finish_reason': 'shutdown',\n 'finish_time': datetime.datetime(2019, 6, 10, 13, 35, 31, 551969),\n 'item_scraped_count': 49415,\n 'log_count/ERROR': 3,\n 'log_count/INFO': 325,\n 'memusage/max': 85204992,\n 'memusage/startup': 62947328,\n 'response_received_count': 7734,\n 'retry/count': 2,\n 'retry/reason_count/503 Service Unavailable': 2,\n 'robotstxt/request_count': 1,\n 'robotstxt/response_count': 1,\n 'robotstxt/response_status_count/404': 1,\n 'scheduler/dequeued/redis': 7738,\n 'scheduler/enqueued/redis': 7737,\n 'start_time': datetime.datetime(2019, 6, 10, 8, 18, 37, 762637)}\n2019-06-10 21:35:31 [scrapy.core.engine] INFO: Spider closed (shutdown)\n",
+    "first_log_timestamp": 1560154717,
+    "latest_log_timestamp": 1560173731,
+    "datas": [
+        [
+            "2019-06-10 16:18:37",
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            "2019-06-10 16:19:37",
+            25,
+            25,
+            388,
+            388
+        ],
+        [
+            "2019-06-10 16:20:37",
+            49,
+            24,
+            471,
+            83
+        ],
+        [
+            "2019-06-10 16:21:37",
+            73,
+            24,
+            531,
+            60
+        ],
+        [
+            "2019-06-10 16:22:37",
+            97,
+            24,
+            642,
+            111
+        ],
+        [
+            "2019-06-10 16:23:37",
+            122,
+            25,
+            725,
+            83
+        ],
+        [
+            "2019-06-10 16:24:37",
+            147,
+            25,
+            874,
+            149
+        ],
+        [
+            "2019-06-10 16:25:37",
+            172,
+            25,
+            958,
+            84
+        ],
+        [
+            "2019-06-10 16:26:37",
+            197,
+            25,
+            1160,
+            202
+        ],
+        [
+            "2019-06-10 16:27:37",
+            220,
+            23,
+            1453,
+            293
+        ],
+        [
+            "2019-06-10 16:28:37",
+            243,
+            23,
+            1530,
+            77
+        ],
+        [
+            "2019-06-10 16:29:37",
+            268,
+            25,
+            1761,
+            231
+        ],
+        [
+            "2019-06-10 16:30:37",
+            292,
+            24,
+            1792,
+            31
+        ],
+        [
+            "2019-06-10 16:31:37",
+            318,
+            26,
+            1875,
+            83
+        ],
+        [
+            "2019-06-10 16:32:37",
+            343,
+            25,
+            2068,
+            193
+        ],
+        [
+            "2019-06-10 16:33:37",
+            367,
+            24,
+            2136,
+            68
+        ],
+        [
+            "2019-06-10 16:34:37",
+            393,
+            26,
+            2214,
+            78
+        ],
+        [
+            "2019-06-10 16:35:37",
+            418,
+            25,
+            2255,
+            41
+        ],
+        [
+            "2019-06-10 16:36:37",
+            443,
+            25,
+            2302,
+            47
+        ],
+        [
+            "2019-06-10 16:37:37",
+            465,
+            22,
+            2345,
+            43
+        ],
+        [
+            "2019-06-10 16:38:37",
+            489,
+            24,
+            2514,
+            169
+        ],
+        [
+            "2019-06-10 16:39:37",
+            513,
+            24,
+            2677,
+            163
+        ],
+        [
+            "2019-06-10 16:40:37",
+            539,
+            26,
+            2921,
+            244
+        ],
+        [
+            "2019-06-10 16:41:37",
+            563,
+            24,
+            2982,
+            61
+        ],
+        [
+            "2019-06-10 16:42:37",
+            587,
+            24,
+            3176,
+            194
+        ],
+        [
+            "2019-06-10 16:43:37",
+            611,
+            24,
+            3243,
+            67
+        ],
+        [
+            "2019-06-10 16:44:37",
+            636,
+            25,
+            3383,
+            140
+        ],
+        [
+            "2019-06-10 16:45:37",
+            660,
+            24,
+            3482,
+            99
+        ],
+        [
+            "2019-06-10 16:46:37",
+            685,
+            25,
+            3574,
+            92
+        ],
+        [
+            "2019-06-10 16:47:37",
+            710,
+            25,
+            3662,
+            88
+        ],
+        [
+            "2019-06-10 16:48:37",
+            735,
+            25,
+            3758,
+            96
+        ],
+        [
+            "2019-06-10 16:49:37",
+            760,
+            25,
+            3806,
+            48
+        ],
+        [
+            "2019-06-10 16:50:37",
+            785,
+            25,
+            3928,
+            122
+        ],
+        [
+            "2019-06-10 16:51:37",
+            809,
+            24,
+            4094,
+            166
+        ],
+        [
+            "2019-06-10 16:52:37",
+            833,
+            24,
+            4386,
+            292
+        ],
+        [
+            "2019-06-10 16:53:37",
+            859,
+            26,
+            4571,
+            185
+        ],
+        [
+            "2019-06-10 16:54:37",
+            883,
+            24,
+            4751,
+            180
+        ],
+        [
+            "2019-06-10 16:55:37",
+            906,
+            23,
+            4857,
+            106
+        ],
+        [
+            "2019-06-10 16:56:37",
+            931,
+            25,
+            5045,
+            188
+        ],
+        [
+            "2019-06-10 16:57:37",
+            954,
+            23,
+            5217,
+            172
+        ],
+        [
+            "2019-06-10 16:58:37",
+            980,
+            26,
+            5350,
+            133
+        ],
+        [
+            "2019-06-10 16:59:37",
+            1003,
+            23,
+            5443,
+            93
+        ],
+        [
+            "2019-06-10 17:00:37",
+            1028,
+            25,
+            5537,
+            94
+        ],
+        [
+            "2019-06-10 17:01:37",
+            1052,
+            24,
+            5606,
+            69
+        ],
+        [
+            "2019-06-10 17:02:37",
+            1075,
+            23,
+            5727,
+            121
+        ],
+        [
+            "2019-06-10 17:03:37",
+            1098,
+            23,
+            5796,
+            69
+        ],
+        [
+            "2019-06-10 17:04:37",
+            1124,
+            26,
+            5882,
+            86
+        ],
+        [
+            "2019-06-10 17:05:37",
+            1150,
+            26,
+            6012,
+            130
+        ],
+        [
+            "2019-06-10 17:06:37",
+            1173,
+            23,
+            6180,
+            168
+        ],
+        [
+            "2019-06-10 17:07:37",
+            1197,
+            24,
+            6492,
+            312
+        ],
+        [
+            "2019-06-10 17:08:37",
+            1222,
+            25,
+            6672,
+            180
+        ],
+        [
+            "2019-06-10 17:09:37",
+            1245,
+            23,
+            6754,
+            82
+        ],
+        [
+            "2019-06-10 17:10:37",
+            1270,
+            25,
+            7248,
+            494
+        ],
+        [
+            "2019-06-10 17:11:37",
+            1294,
+            24,
+            7334,
+            86
+        ],
+        [
+            "2019-06-10 17:12:37",
+            1320,
+            26,
+            7444,
+            110
+        ],
+        [
+            "2019-06-10 17:13:37",
+            1345,
+            25,
+            7708,
+            264
+        ],
+        [
+            "2019-06-10 17:14:37",
+            1370,
+            25,
+            8037,
+            329
+        ],
+        [
+            "2019-06-10 17:15:37",
+            1395,
+            25,
+            8375,
+            338
+        ],
+        [
+            "2019-06-10 17:16:37",
+            1420,
+            25,
+            8700,
+            325
+        ],
+        [
+            "2019-06-10 17:17:37",
+            1444,
+            24,
+            8933,
+            233
+        ],
+        [
+            "2019-06-10 17:18:37",
+            1469,
+            25,
+            9205,
+            272
+        ],
+        [
+            "2019-06-10 17:19:37",
+            1495,
+            26,
+            9737,
+            532
+        ],
+        [
+            "2019-06-10 17:20:37",
+            1514,
+            19,
+            9804,
+            67
+        ],
+        [
+            "2019-06-10 17:21:37",
+            1539,
+            25,
+            9894,
+            90
+        ],
+        [
+            "2019-06-10 17:22:37",
+            1561,
+            22,
+            10030,
+            136
+        ],
+        [
+            "2019-06-10 17:23:37",
+            1583,
+            22,
+            10060,
+            30
+        ],
+        [
+            "2019-06-10 17:24:37",
+            1609,
+            26,
+            10159,
+            99
+        ],
+        [
+            "2019-06-10 17:25:37",
+            1632,
+            23,
+            10244,
+            85
+        ],
+        [
+            "2019-06-10 17:26:37",
+            1656,
+            24,
+            10375,
+            131
+        ],
+        [
+            "2019-06-10 17:27:37",
+            1680,
+            24,
+            10479,
+            104
+        ],
+        [
+            "2019-06-10 17:28:37",
+            1707,
+            27,
+            10763,
+            284
+        ],
+        [
+            "2019-06-10 17:29:37",
+            1733,
+            26,
+            11019,
+            256
+        ],
+        [
+            "2019-06-10 17:30:37",
+            1758,
+            25,
+            11118,
+            99
+        ],
+        [
+            "2019-06-10 17:31:37",
+            1781,
+            23,
+            11332,
+            214
+        ],
+        [
+            "2019-06-10 17:32:37",
+            1805,
+            24,
+            11517,
+            185
+        ],
+        [
+            "2019-06-10 17:33:37",
+            1829,
+            24,
+            11615,
+            98
+        ],
+        [
+            "2019-06-10 17:34:37",
+            1855,
+            26,
+            11865,
+            250
+        ],
+        [
+            "2019-06-10 17:35:37",
+            1880,
+            25,
+            11992,
+            127
+        ],
+        [
+            "2019-06-10 17:36:37",
+            1906,
+            26,
+            12115,
+            123
+        ],
+        [
+            "2019-06-10 17:37:37",
+            1928,
+            22,
+            12184,
+            69
+        ],
+        [
+            "2019-06-10 17:38:37",
+            1953,
+            25,
+            12257,
+            73
+        ],
+        [
+            "2019-06-10 17:39:37",
+            1978,
+            25,
+            12400,
+            143
+        ],
+        [
+            "2019-06-10 17:40:37",
+            2000,
+            22,
+            12560,
+            160
+        ],
+        [
+            "2019-06-10 17:41:37",
+            2024,
+            24,
+            12712,
+            152
+        ],
+        [
+            "2019-06-10 17:42:37",
+            2049,
+            25,
+            12914,
+            202
+        ],
+        [
+            "2019-06-10 17:43:37",
+            2072,
+            23,
+            13017,
+            103
+        ],
+        [
+            "2019-06-10 17:44:37",
+            2097,
+            25,
+            13060,
+            43
+        ],
+        [
+            "2019-06-10 17:45:37",
+            2121,
+            24,
+            13112,
+            52
+        ],
+        [
+            "2019-06-10 17:46:37",
+            2145,
+            24,
+            13191,
+            79
+        ],
+        [
+            "2019-06-10 17:47:37",
+            2169,
+            24,
+            13425,
+            234
+        ],
+        [
+            "2019-06-10 17:48:37",
+            2193,
+            24,
+            13763,
+            338
+        ],
+        [
+            "2019-06-10 17:49:37",
+            2217,
+            24,
+            13953,
+            190
+        ],
+        [
+            "2019-06-10 17:50:37",
+            2240,
+            23,
+            14095,
+            142
+        ],
+        [
+            "2019-06-10 17:51:37",
+            2263,
+            23,
+            14349,
+            254
+        ],
+        [
+            "2019-06-10 17:52:37",
+            2291,
+            28,
+            14519,
+            170
+        ],
+        [
+            "2019-06-10 17:53:37",
+            2316,
+            25,
+            14634,
+            115
+        ],
+        [
+            "2019-06-10 17:54:37",
+            2341,
+            25,
+            14937,
+            303
+        ],
+        [
+            "2019-06-10 17:55:37",
+            2365,
+            24,
+            15103,
+            166
+        ],
+        [
+            "2019-06-10 17:56:37",
+            2391,
+            26,
+            15200,
+            97
+        ],
+        [
+            "2019-06-10 17:57:37",
+            2415,
+            24,
+            15361,
+            161
+        ],
+        [
+            "2019-06-10 17:58:37",
+            2440,
+            25,
+            15402,
+            41
+        ],
+        [
+            "2019-06-10 17:59:37",
+            2465,
+            25,
+            15561,
+            159
+        ],
+        [
+            "2019-06-10 18:00:37",
+            2489,
+            24,
+            15713,
+            152
+        ],
+        [
+            "2019-06-10 18:01:37",
+            2513,
+            24,
+            15782,
+            69
+        ],
+        [
+            "2019-06-10 18:02:37",
+            2538,
+            25,
+            15868,
+            86
+        ],
+        [
+            "2019-06-10 18:03:37",
+            2561,
+            23,
+            15923,
+            55
+        ],
+        [
+            "2019-06-10 18:04:37",
+            2586,
+            25,
+            16071,
+            148
+        ],
+        [
+            "2019-06-10 18:05:37",
+            2610,
+            24,
+            16273,
+            202
+        ],
+        [
+            "2019-06-10 18:06:37",
+            2635,
+            25,
+            16349,
+            76
+        ],
+        [
+            "2019-06-10 18:07:37",
+            2661,
+            26,
+            16495,
+            146
+        ],
+        [
+            "2019-06-10 18:08:37",
+            2685,
+            24,
+            16552,
+            57
+        ],
+        [
+            "2019-06-10 18:09:37",
+            2710,
+            25,
+            16640,
+            88
+        ],
+        [
+            "2019-06-10 18:10:37",
+            2733,
+            23,
+            16722,
+            82
+        ],
+        [
+            "2019-06-10 18:11:37",
+            2757,
+            24,
+            16804,
+            82
+        ],
+        [
+            "2019-06-10 18:12:37",
+            2782,
+            25,
+            16930,
+            126
+        ],
+        [
+            "2019-06-10 18:13:37",
+            2806,
+            24,
+            17081,
+            151
+        ],
+        [
+            "2019-06-10 18:14:37",
+            2832,
+            26,
+            17360,
+            279
+        ],
+        [
+            "2019-06-10 18:15:37",
+            2856,
+            24,
+            17609,
+            249
+        ],
+        [
+            "2019-06-10 18:16:37",
+            2881,
+            25,
+            17837,
+            228
+        ],
+        [
+            "2019-06-10 18:17:37",
+            2905,
+            24,
+            17962,
+            125
+        ],
+        [
+            "2019-06-10 18:18:37",
+            2930,
+            25,
+            18043,
+            81
+        ],
+        [
+            "2019-06-10 18:19:37",
+            2954,
+            24,
+            18223,
+            180
+        ],
+        [
+            "2019-06-10 18:20:37",
+            2978,
+            24,
+            18424,
+            201
+        ],
+        [
+            "2019-06-10 18:21:37",
+            3002,
+            24,
+            18543,
+            119
+        ],
+        [
+            "2019-06-10 18:22:37",
+            3026,
+            24,
+            18620,
+            77
+        ],
+        [
+            "2019-06-10 18:23:37",
+            3046,
+            20,
+            18700,
+            80
+        ],
+        [
+            "2019-06-10 18:24:37",
+            3069,
+            23,
+            18748,
+            48
+        ],
+        [
+            "2019-06-10 18:25:37",
+            3091,
+            22,
+            18894,
+            146
+        ],
+        [
+            "2019-06-10 18:26:37",
+            3113,
+            22,
+            19036,
+            142
+        ],
+        [
+            "2019-06-10 18:27:37",
+            3139,
+            26,
+            19164,
+            128
+        ],
+        [
+            "2019-06-10 18:28:37",
+            3164,
+            25,
+            19223,
+            59
+        ],
+        [
+            "2019-06-10 18:29:37",
+            3188,
+            24,
+            19677,
+            454
+        ],
+        [
+            "2019-06-10 18:30:37",
+            3212,
+            24,
+            19892,
+            215
+        ],
+        [
+            "2019-06-10 18:31:37",
+            3236,
+            24,
+            20051,
+            159
+        ],
+        [
+            "2019-06-10 18:32:37",
+            3259,
+            23,
+            20311,
+            260
+        ],
+        [
+            "2019-06-10 18:33:37",
+            3284,
+            25,
+            20404,
+            93
+        ],
+        [
+            "2019-06-10 18:34:37",
+            3308,
+            24,
+            20543,
+            139
+        ],
+        [
+            "2019-06-10 18:35:37",
+            3332,
+            24,
+            20622,
+            79
+        ],
+        [
+            "2019-06-10 18:36:37",
+            3357,
+            25,
+            20906,
+            284
+        ],
+        [
+            "2019-06-10 18:37:37",
+            3382,
+            25,
+            21335,
+            429
+        ],
+        [
+            "2019-06-10 18:38:37",
+            3404,
+            22,
+            21708,
+            373
+        ],
+        [
+            "2019-06-10 18:39:37",
+            3429,
+            25,
+            21961,
+            253
+        ],
+        [
+            "2019-06-10 18:40:37",
+            3454,
+            25,
+            22126,
+            165
+        ],
+        [
+            "2019-06-10 18:41:37",
+            3478,
+            24,
+            22194,
+            68
+        ],
+        [
+            "2019-06-10 18:42:37",
+            3502,
+            24,
+            22295,
+            101
+        ],
+        [
+            "2019-06-10 18:43:37",
+            3528,
+            26,
+            22451,
+            156
+        ],
+        [
+            "2019-06-10 18:44:37",
+            3552,
+            24,
+            22637,
+            186
+        ],
+        [
+            "2019-06-10 18:45:37",
+            3577,
+            25,
+            22779,
+            142
+        ],
+        [
+            "2019-06-10 18:46:37",
+            3600,
+            23,
+            23008,
+            229
+        ],
+        [
+            "2019-06-10 18:47:37",
+            3626,
+            26,
+            23099,
+            91
+        ],
+        [
+            "2019-06-10 18:48:37",
+            3650,
+            24,
+            23309,
+            210
+        ],
+        [
+            "2019-06-10 18:49:37",
+            3675,
+            25,
+            23395,
+            86
+        ],
+        [
+            "2019-06-10 18:50:37",
+            3699,
+            24,
+            23480,
+            85
+        ],
+        [
+            "2019-06-10 18:51:37",
+            3723,
+            24,
+            23628,
+            148
+        ],
+        [
+            "2019-06-10 18:52:37",
+            3746,
+            23,
+            23828,
+            200
+        ],
+        [
+            "2019-06-10 18:53:37",
+            3769,
+            23,
+            23983,
+            155
+        ],
+        [
+            "2019-06-10 18:54:37",
+            3793,
+            24,
+            24243,
+            260
+        ],
+        [
+            "2019-06-10 18:55:37",
+            3819,
+            26,
+            24469,
+            226
+        ],
+        [
+            "2019-06-10 18:56:37",
+            3841,
+            22,
+            24656,
+            187
+        ],
+        [
+            "2019-06-10 18:57:37",
+            3866,
+            25,
+            25156,
+            500
+        ],
+        [
+            "2019-06-10 18:58:37",
+            3891,
+            25,
+            25551,
+            395
+        ],
+        [
+            "2019-06-10 18:59:37",
+            3916,
+            25,
+            25619,
+            68
+        ],
+        [
+            "2019-06-10 19:00:37",
+            3942,
+            26,
+            25722,
+            103
+        ],
+        [
+            "2019-06-10 19:01:37",
+            3965,
+            23,
+            25768,
+            46
+        ],
+        [
+            "2019-06-10 19:02:37",
+            3990,
+            25,
+            25814,
+            46
+        ],
+        [
+            "2019-06-10 19:03:37",
+            4015,
+            25,
+            25899,
+            85
+        ],
+        [
+            "2019-06-10 19:04:37",
+            4039,
+            24,
+            25985,
+            86
+        ],
+        [
+            "2019-06-10 19:05:37",
+            4063,
+            24,
+            26347,
+            362
+        ],
+        [
+            "2019-06-10 19:06:37",
+            4087,
+            24,
+            26475,
+            128
+        ],
+        [
+            "2019-06-10 19:07:37",
+            4111,
+            24,
+            26623,
+            148
+        ],
+        [
+            "2019-06-10 19:08:37",
+            4136,
+            25,
+            26873,
+            250
+        ],
+        [
+            "2019-06-10 19:09:37",
+            4161,
+            25,
+            27111,
+            238
+        ],
+        [
+            "2019-06-10 19:10:37",
+            4186,
+            25,
+            27195,
+            84
+        ],
+        [
+            "2019-06-10 19:11:37",
+            4209,
+            23,
+            27356,
+            161
+        ],
+        [
+            "2019-06-10 19:12:37",
+            4234,
+            25,
+            27461,
+            105
+        ],
+        [
+            "2019-06-10 19:13:37",
+            4259,
+            25,
+            27638,
+            177
+        ],
+        [
+            "2019-06-10 19:14:37",
+            4284,
+            25,
+            27666,
+            28
+        ],
+        [
+            "2019-06-10 19:15:37",
+            4308,
+            24,
+            27710,
+            44
+        ],
+        [
+            "2019-06-10 19:16:37",
+            4332,
+            24,
+            27763,
+            53
+        ],
+        [
+            "2019-06-10 19:17:37",
+            4356,
+            24,
+            27862,
+            99
+        ],
+        [
+            "2019-06-10 19:18:37",
+            4379,
+            23,
+            28316,
+            454
+        ],
+        [
+            "2019-06-10 19:19:37",
+            4402,
+            23,
+            28510,
+            194
+        ],
+        [
+            "2019-06-10 19:20:37",
+            4426,
+            24,
+            28854,
+            344
+        ],
+        [
+            "2019-06-10 19:21:37",
+            4450,
+            24,
+            29248,
+            394
+        ],
+        [
+            "2019-06-10 19:22:37",
+            4474,
+            24,
+            29325,
+            77
+        ],
+        [
+            "2019-06-10 19:23:37",
+            4498,
+            24,
+            29390,
+            65
+        ],
+        [
+            "2019-06-10 19:24:37",
+            4521,
+            23,
+            29465,
+            75
+        ],
+        [
+            "2019-06-10 19:25:37",
+            4546,
+            25,
+            29561,
+            96
+        ],
+        [
+            "2019-06-10 19:26:37",
+            4570,
+            24,
+            29679,
+            118
+        ],
+        [
+            "2019-06-10 19:27:37",
+            4596,
+            26,
+            29752,
+            73
+        ],
+        [
+            "2019-06-10 19:28:37",
+            4620,
+            24,
+            29921,
+            169
+        ],
+        [
+            "2019-06-10 19:29:37",
+            4642,
+            22,
+            30065,
+            144
+        ],
+        [
+            "2019-06-10 19:30:37",
+            4668,
+            26,
+            30138,
+            73
+        ],
+        [
+            "2019-06-10 19:31:37",
+            4693,
+            25,
+            30203,
+            65
+        ],
+        [
+            "2019-06-10 19:32:37",
+            4717,
+            24,
+            30286,
+            83
+        ],
+        [
+            "2019-06-10 19:33:37",
+            4741,
+            24,
+            30350,
+            64
+        ],
+        [
+            "2019-06-10 19:34:37",
+            4766,
+            25,
+            30426,
+            76
+        ],
+        [
+            "2019-06-10 19:35:37",
+            4791,
+            25,
+            30637,
+            211
+        ],
+        [
+            "2019-06-10 19:36:37",
+            4814,
+            23,
+            30828,
+            191
+        ],
+        [
+            "2019-06-10 19:37:37",
+            4839,
+            25,
+            31014,
+            186
+        ],
+        [
+            "2019-06-10 19:38:37",
+            4863,
+            24,
+            31266,
+            252
+        ],
+        [
+            "2019-06-10 19:39:37",
+            4888,
+            25,
+            31456,
+            190
+        ],
+        [
+            "2019-06-10 19:40:37",
+            4913,
+            25,
+            31503,
+            47
+        ],
+        [
+            "2019-06-10 19:41:37",
+            4937,
+            24,
+            31800,
+            297
+        ],
+        [
+            "2019-06-10 19:42:37",
+            4962,
+            25,
+            31960,
+            160
+        ],
+        [
+            "2019-06-10 19:43:37",
+            4985,
+            23,
+            32289,
+            329
+        ],
+        [
+            "2019-06-10 19:44:37",
+            5009,
+            24,
+            32670,
+            381
+        ],
+        [
+            "2019-06-10 19:45:37",
+            5036,
+            27,
+            32816,
+            146
+        ],
+        [
+            "2019-06-10 19:46:37",
+            5062,
+            26,
+            33017,
+            201
+        ],
+        [
+            "2019-06-10 19:47:37",
+            5085,
+            23,
+            33225,
+            208
+        ],
+        [
+            "2019-06-10 19:48:37",
+            5109,
+            24,
+            33344,
+            119
+        ],
+        [
+            "2019-06-10 19:49:37",
+            5134,
+            25,
+            33532,
+            188
+        ],
+        [
+            "2019-06-10 19:50:37",
+            5158,
+            24,
+            33790,
+            258
+        ],
+        [
+            "2019-06-10 19:51:37",
+            5182,
+            24,
+            34156,
+            366
+        ],
+        [
+            "2019-06-10 19:52:37",
+            5207,
+            25,
+            34509,
+            353
+        ],
+        [
+            "2019-06-10 19:53:37",
+            5231,
+            24,
+            34736,
+            227
+        ],
+        [
+            "2019-06-10 19:54:37",
+            5255,
+            24,
+            34969,
+            233
+        ],
+        [
+            "2019-06-10 19:55:37",
+            5279,
+            24,
+            35185,
+            216
+        ],
+        [
+            "2019-06-10 19:56:37",
+            5304,
+            25,
+            35304,
+            119
+        ],
+        [
+            "2019-06-10 19:57:37",
+            5328,
+            24,
+            35433,
+            129
+        ],
+        [
+            "2019-06-10 19:58:37",
+            5350,
+            22,
+            35487,
+            54
+        ],
+        [
+            "2019-06-10 19:59:37",
+            5374,
+            24,
+            35646,
+            159
+        ],
+        [
+            "2019-06-10 20:00:37",
+            5397,
+            23,
+            35688,
+            42
+        ],
+        [
+            "2019-06-10 20:01:37",
+            5422,
+            25,
+            35784,
+            96
+        ],
+        [
+            "2019-06-10 20:02:37",
+            5446,
+            24,
+            35912,
+            128
+        ],
+        [
+            "2019-06-10 20:03:37",
+            5471,
+            25,
+            36236,
+            324
+        ],
+        [
+            "2019-06-10 20:04:37",
+            5495,
+            24,
+            36404,
+            168
+        ],
+        [
+            "2019-06-10 20:05:37",
+            5520,
+            25,
+            36572,
+            168
+        ],
+        [
+            "2019-06-10 20:06:37",
+            5544,
+            24,
+            36859,
+            287
+        ],
+        [
+            "2019-06-10 20:07:37",
+            5568,
+            24,
+            36959,
+            100
+        ],
+        [
+            "2019-06-10 20:08:37",
+            5594,
+            26,
+            37183,
+            224
+        ],
+        [
+            "2019-06-10 20:09:37",
+            5617,
+            23,
+            37361,
+            178
+        ],
+        [
+            "2019-06-10 20:10:37",
+            5642,
+            25,
+            37503,
+            142
+        ],
+        [
+            "2019-06-10 20:11:37",
+            5667,
+            25,
+            37548,
+            45
+        ],
+        [
+            "2019-06-10 20:12:37",
+            5692,
+            25,
+            37719,
+            171
+        ],
+        [
+            "2019-06-10 20:13:37",
+            5717,
+            25,
+            37926,
+            207
+        ],
+        [
+            "2019-06-10 20:14:37",
+            5742,
+            25,
+            37982,
+            56
+        ],
+        [
+            "2019-06-10 20:15:37",
+            5766,
+            24,
+            38048,
+            66
+        ],
+        [
+            "2019-06-10 20:16:37",
+            5790,
+            24,
+            38269,
+            221
+        ],
+        [
+            "2019-06-10 20:17:37",
+            5816,
+            26,
+            38456,
+            187
+        ],
+        [
+            "2019-06-10 20:18:37",
+            5837,
+            21,
+            38494,
+            38
+        ],
+        [
+            "2019-06-10 20:19:37",
+            5861,
+            24,
+            38547,
+            53
+        ],
+        [
+            "2019-06-10 20:20:37",
+            5887,
+            26,
+            38623,
+            76
+        ],
+        [
+            "2019-06-10 20:21:37",
+            5912,
+            25,
+            38749,
+            126
+        ],
+        [
+            "2019-06-10 20:22:37",
+            5938,
+            26,
+            38885,
+            136
+        ],
+        [
+            "2019-06-10 20:23:37",
+            5962,
+            24,
+            38922,
+            37
+        ],
+        [
+            "2019-06-10 20:24:37",
+            5987,
+            25,
+            39026,
+            104
+        ],
+        [
+            "2019-06-10 20:25:37",
+            6012,
+            25,
+            39062,
+            36
+        ],
+        [
+            "2019-06-10 20:26:37",
+            6036,
+            24,
+            39257,
+            195
+        ],
+        [
+            "2019-06-10 20:27:37",
+            6060,
+            24,
+            39283,
+            26
+        ],
+        [
+            "2019-06-10 20:28:37",
+            6085,
+            25,
+            39360,
+            77
+        ],
+        [
+            "2019-06-10 20:29:37",
+            6111,
+            26,
+            39532,
+            172
+        ],
+        [
+            "2019-06-10 20:30:37",
+            6135,
+            24,
+            39839,
+            307
+        ],
+        [
+            "2019-06-10 20:31:37",
+            6160,
+            25,
+            39967,
+            128
+        ],
+        [
+            "2019-06-10 20:32:37",
+            6187,
+            27,
+            40052,
+            85
+        ],
+        [
+            "2019-06-10 20:33:37",
+            6211,
+            24,
+            40111,
+            59
+        ],
+        [
+            "2019-06-10 20:34:37",
+            6235,
+            24,
+            40252,
+            141
+        ],
+        [
+            "2019-06-10 20:35:37",
+            6260,
+            25,
+            40333,
+            81
+        ],
+        [
+            "2019-06-10 20:36:37",
+            6285,
+            25,
+            40512,
+            179
+        ],
+        [
+            "2019-06-10 20:37:37",
+            6310,
+            25,
+            40636,
+            124
+        ],
+        [
+            "2019-06-10 20:38:37",
+            6336,
+            26,
+            40673,
+            37
+        ],
+        [
+            "2019-06-10 20:39:37",
+            6361,
+            25,
+            40727,
+            54
+        ],
+        [
+            "2019-06-10 20:40:37",
+            6386,
+            25,
+            40759,
+            32
+        ],
+        [
+            "2019-06-10 20:41:37",
+            6411,
+            25,
+            40967,
+            208
+        ],
+        [
+            "2019-06-10 20:42:37",
+            6436,
+            25,
+            41145,
+            178
+        ],
+        [
+            "2019-06-10 20:43:37",
+            6460,
+            24,
+            41416,
+            271
+        ],
+        [
+            "2019-06-10 20:44:37",
+            6485,
+            25,
+            41490,
+            74
+        ],
+        [
+            "2019-06-10 20:45:37",
+            6511,
+            26,
+            41610,
+            120
+        ],
+        [
+            "2019-06-10 20:46:37",
+            6535,
+            24,
+            41832,
+            222
+        ],
+        [
+            "2019-06-10 20:47:37",
+            6559,
+            24,
+            42100,
+            268
+        ],
+        [
+            "2019-06-10 20:48:37",
+            6583,
+            24,
+            42283,
+            183
+        ],
+        [
+            "2019-06-10 20:49:37",
+            6606,
+            23,
+            42392,
+            109
+        ],
+        [
+            "2019-06-10 20:50:37",
+            6631,
+            25,
+            42579,
+            187
+        ],
+        [
+            "2019-06-10 20:51:37",
+            6655,
+            24,
+            42848,
+            269
+        ],
+        [
+            "2019-06-10 20:52:37",
+            6680,
+            25,
+            43221,
+            373
+        ],
+        [
+            "2019-06-10 20:53:37",
+            6704,
+            24,
+            43364,
+            143
+        ],
+        [
+            "2019-06-10 20:54:37",
+            6728,
+            24,
+            43575,
+            211
+        ],
+        [
+            "2019-06-10 20:55:37",
+            6754,
+            26,
+            43760,
+            185
+        ],
+        [
+            "2019-06-10 20:56:37",
+            6780,
+            26,
+            43849,
+            89
+        ],
+        [
+            "2019-06-10 20:57:37",
+            6805,
+            25,
+            43980,
+            131
+        ],
+        [
+            "2019-06-10 20:58:37",
+            6829,
+            24,
+            44112,
+            132
+        ],
+        [
+            "2019-06-10 20:59:37",
+            6852,
+            23,
+            44351,
+            239
+        ],
+        [
+            "2019-06-10 21:00:37",
+            6876,
+            24,
+            44476,
+            125
+        ],
+        [
+            "2019-06-10 21:01:37",
+            6902,
+            26,
+            44518,
+            42
+        ],
+        [
+            "2019-06-10 21:02:37",
+            6928,
+            26,
+            44659,
+            141
+        ],
+        [
+            "2019-06-10 21:03:37",
+            6953,
+            25,
+            44810,
+            151
+        ],
+        [
+            "2019-06-10 21:04:37",
+            6978,
+            25,
+            44973,
+            163
+        ],
+        [
+            "2019-06-10 21:05:37",
+            7001,
+            23,
+            45189,
+            216
+        ],
+        [
+            "2019-06-10 21:06:37",
+            7026,
+            25,
+            45373,
+            184
+        ],
+        [
+            "2019-06-10 21:07:37",
+            7052,
+            26,
+            45630,
+            257
+        ],
+        [
+            "2019-06-10 21:08:37",
+            7076,
+            24,
+            45820,
+            190
+        ],
+        [
+            "2019-06-10 21:09:37",
+            7100,
+            24,
+            45870,
+            50
+        ],
+        [
+            "2019-06-10 21:10:37",
+            7126,
+            26,
+            45952,
+            82
+        ],
+        [
+            "2019-06-10 21:11:37",
+            7151,
+            25,
+            46044,
+            92
+        ],
+        [
+            "2019-06-10 21:12:37",
+            7175,
+            24,
+            46168,
+            124
+        ],
+        [
+            "2019-06-10 21:13:37",
+            7201,
+            26,
+            46216,
+            48
+        ],
+        [
+            "2019-06-10 21:14:37",
+            7224,
+            23,
+            46293,
+            77
+        ],
+        [
+            "2019-06-10 21:15:37",
+            7249,
+            25,
+            46423,
+            130
+        ],
+        [
+            "2019-06-10 21:16:37",
+            7273,
+            24,
+            46551,
+            128
+        ],
+        [
+            "2019-06-10 21:17:37",
+            7297,
+            24,
+            46705,
+            154
+        ],
+        [
+            "2019-06-10 21:18:37",
+            7321,
+            24,
+            46850,
+            145
+        ],
+        [
+            "2019-06-10 21:19:37",
+            7345,
+            24,
+            46946,
+            96
+        ],
+        [
+            "2019-06-10 21:20:37",
+            7369,
+            24,
+            47065,
+            119
+        ],
+        [
+            "2019-06-10 21:21:37",
+            7393,
+            24,
+            47247,
+            182
+        ],
+        [
+            "2019-06-10 21:22:37",
+            7418,
+            25,
+            47442,
+            195
+        ],
+        [
+            "2019-06-10 21:23:37",
+            7443,
+            25,
+            47533,
+            91
+        ],
+        [
+            "2019-06-10 21:24:37",
+            7467,
+            24,
+            47737,
+            204
+        ],
+        [
+            "2019-06-10 21:25:37",
+            7490,
+            23,
+            48020,
+            283
+        ],
+        [
+            "2019-06-10 21:26:37",
+            7515,
+            25,
+            48267,
+            247
+        ],
+        [
+            "2019-06-10 21:27:37",
+            7539,
+            24,
+            48562,
+            295
+        ],
+        [
+            "2019-06-10 21:28:37",
+            7563,
+            24,
+            48671,
+            109
+        ],
+        [
+            "2019-06-10 21:29:37",
+            7588,
+            25,
+            48805,
+            134
+        ],
+        [
+            "2019-06-10 21:30:37",
+            7613,
+            25,
+            48974,
+            169
+        ],
+        [
+            "2019-06-10 21:31:37",
+            7638,
+            25,
+            49087,
+            113
+        ],
+        [
+            "2019-06-10 21:32:37",
+            7664,
+            26,
+            49126,
+            39
+        ],
+        [
+            "2019-06-10 21:33:37",
+            7688,
+            24,
+            49156,
+            30
+        ],
+        [
+            "2019-06-10 21:34:37",
+            7712,
+            24,
+            49346,
+            190
+        ]
+    ],
+    "latest_matches": {
+        "telnet_console": "",
+        "resuming_crawl": "",
+        "latest_offsite": "",
+        "latest_duplicate": "",
+        "latest_crawl": "",
+        "latest_scrape": "",
+        "latest_item": "",
+        "latest_stat": "2019-06-10 21:34:37 [scrapy.extensions.logstats] INFO: Crawled 7712 pages (at 24 pages/min), scraped 49346 items (at 190 items/min)"
+    },
+    "latest_crawl_timestamp": 0,
+    "latest_scrape_timestamp": 0,
+    "log_categories": {
+        "critical_logs": {
+            "count": 0,
+            "details": []
+        },
+        "error_logs": {
+            "count": 3,
+            "details": [
+                "2019-06-10 17:02:12 [Guba.spiders.CommentPageUrlSpider] ERROR: http://guba.eastmoney.com/news,601678,48255953.html json 解析出错, 错误原因 Error 60 connecting to 120.***.***.***:6379. Operation timed out.",
+                "2019-06-10 19:43:25 [Guba.spiders.CommentPageUrlSpider] ERROR: 评论部分用户 http://guba.eastmoney.com/news,601318,195812804.html json 解析出错, 错误原因 Unterminated string starting at: line 1 column 47 (char 46) \n",
+                "2019-06-10 19:43:25 [Guba.spiders.CommentPageUrlSpider] ERROR: 评论部分用户 http://guba.eastmoney.com/news,601318,195812804.html json 解析出错, 错误原因 Unterminated string starting at: line 1 column 47 (char 46)"
+            ]
+        },
+        "warning_logs": {
+            "count": 0,
+            "details": []
+        },
+        "redirect_logs": {
+            "count": 3,
+            "details": []
+        },
+        "retry_logs": {
+            "count": 2,
+            "details": []
+        },
+        "ignore_logs": {
+            "count": 0,
+            "details": []
+        }
+    },
+    "crawler_stats": {
+        "source": "log",
+        "last_update_time": "2019-06-10 21:35:31",
+        "last_update_timestamp": 1560173731,
+        "downloader/request_bytes": 2431193,
+        "downloader/request_count": 7739,
+        "downloader/request_method_count/GET": 7739,
+        "downloader/response_bytes": 154176016,
+        "downloader/response_count": 7739,
+        "downloader/response_status_count/200": 7733,
+        "downloader/response_status_count/302": 3,
+        "downloader/response_status_count/404": 1,
+        "downloader/response_status_count/503": 2,
+        "finish_reason": "shutdown",
+        "finish_time": "datetime.datetime(2019, 6, 10, 13, 35, 31, 551969)",
+        "item_scraped_count": 49415,
+        "log_count/ERROR": 3,
+        "log_count/INFO": 325,
+        "memusage/max": 85204992,
+        "memusage/startup": 62947328,
+        "response_received_count": 7734,
+        "retry/count": 2,
+        "retry/reason_count/503 Service Unavailable": 2,
+        "robotstxt/request_count": 1,
+        "robotstxt/response_count": 1,
+        "robotstxt/response_status_count/404": 1,
+        "scheduler/dequeued/redis": 7738,
+        "scheduler/enqueued/redis": 7737,
+        "start_time": "datetime.datetime(2019, 6, 10, 8, 18, 37, 762637)"
+    },
+    "last_update_timestamp": 1560173768,
+    "logparser_version": "0.8.1",
+    "crawler_engine": {}
+}
